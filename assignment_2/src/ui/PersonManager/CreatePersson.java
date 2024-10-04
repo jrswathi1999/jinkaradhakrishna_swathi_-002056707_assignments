@@ -506,6 +506,10 @@ public class CreatePersson extends javax.swing.JPanel {
         Address homeAdd = new Address(hStreet, hUnit, hCity,hState,hZip,hPhone);
         Address workAdd = new Address(wStreet, wUnit, wCity,wState,wZip,wPhone);
         
+        //setting home address and work address for the person class
+        p.setHomeAddress(homeAdd);
+        p.setWorkAddress(workAdd);
+        
         //setting account details
         JOptionPane.showMessageDialog(null, "Account Created!", "Success", JOptionPane.INFORMATION_MESSAGE);
         
@@ -515,6 +519,19 @@ public class CreatePersson extends javax.swing.JPanel {
         txtSSN.setText("");
         txtAge.setText("");
         
+        HtxtStreetAdd.setText("");
+        HtxtUnitNo.setText("");
+        HtxtCity.setText("");
+        HtxtState.setText("");
+        HtxtZip.setText("");
+        HtxtPhone.setText("");
+        
+        WtxtStreetAdd1.setText("");
+        WtxtUnitNo1.setText("");
+        WtxtCity1.setText("");
+        WtxtState1.setText("");
+        WtxtZip1.setText("");
+        WtxtPhone1.setText("");
     }//GEN-LAST:event_createaccbtnActionPerformed
 
     private void txtFirstNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFirstNameActionPerformed
