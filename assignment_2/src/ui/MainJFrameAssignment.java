@@ -14,13 +14,13 @@ import ui.PersonManager.PersonMngWorkArea;
  *
  * @author jrswa
  */
-public class MainJFrame extends javax.swing.JFrame {
+public class MainJFrameAssignment extends javax.swing.JFrame {
     
     private PersonDirectory personDirectory;
     /**
      * Creates new form MainJFrame
      */
-    public MainJFrame() {
+    public MainJFrameAssignment() {
         initComponents();
         
         this.personDirectory=new PersonDirectory();
@@ -53,7 +53,7 @@ public class MainJFrame extends javax.swing.JFrame {
         topJPanel.setLayout(topJPanelLayout);
         topJPanelLayout.setHorizontalGroup(
             topJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 871, Short.MAX_VALUE)
+            .addGap(0, 1238, Short.MAX_VALUE)
         );
         topJPanelLayout.setVerticalGroup(
             topJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -81,17 +81,17 @@ public class MainJFrame extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(255, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(434, 434, 434)
                 .addComponent(btnAccountMng, javax.swing.GroupLayout.PREFERRED_SIZE, 366, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(250, 250, 250))
+                .addContainerGap(438, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(226, 226, 226)
+                .addGap(252, 252, 252)
                 .addComponent(btnAccountMng, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(559, Short.MAX_VALUE))
+                .addContainerGap(395, Short.MAX_VALUE))
         );
 
         userProcessContainer.add(jPanel1, "card2");
@@ -140,20 +140,21 @@ public class MainJFrame extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(MainJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MainJFrameAssignment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(MainJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MainJFrameAssignment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(MainJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MainJFrameAssignment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(MainJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MainJFrameAssignment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new MainJFrame().setVisible(true);
+                new MainJFrameAssignment().setVisible(true);
             }
         });
     }
@@ -167,27 +168,58 @@ public class MainJFrame extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     private void generateDemoData() {// adding demo data which will be present at the start 
-        Address homeAddress1 = new Address("vinal Street", "apt 2","Boston","MA","02134","9083049809");
-        Address workAddress1 = new Address("Parker Hill", "apt 2","Boston","MA","02120","98779848465");
-        
+//        Address homeAddress1 = new Address("vinal Street", "apt 2","Boston","MA","02134","9083049809");
+//        Address workAddress1 = new Address("Parker Hill", "apt 2","Boston","MA","02120","98779848465");
+//        
         Person newPerson1 = personDirectory.addPerson();
         newPerson1.setFirstName("Aman");
         newPerson1.setLastName("Raj");
-        newPerson1.setSSN("901289388");
-        newPerson1.setAge("19");
-        newPerson1.setHomeAddress(homeAddress1);
-        newPerson1.setWorkAddress(workAddress1);
+        newPerson1.setSSN(901289388);
+        newPerson1.setAge(19);
+        newPerson1.setWeight(60.8);
         
-        Address homeAddress2 = new Address("fenwood Street", "apt 3","Boston","MA","02882","9083049809");
-        Address workAddress2 = new Address("huntington Hill", " 2","Boston","MA","02127","98779823145");
+        
+        newPerson1.getHomeAddress().setStreetAddress("vinal street");
+        newPerson1.getHomeAddress().setUnitNumber("apt 2");
+        newPerson1.getHomeAddress().setCity("Boston");
+        newPerson1.getHomeAddress().setState("MA");
+        newPerson1.getHomeAddress().setZipCode("02130");
+        newPerson1.getHomeAddress().setPhoneNumber("9083049809");
+        
+        newPerson1.getWorkAddress().setStreetAddress("Parker Hill");
+        newPerson1.getWorkAddress().setUnitNumber("apt 2");
+        newPerson1.getWorkAddress().setCity("Boston");
+        newPerson1.getWorkAddress().setState("MA");
+        newPerson1.getWorkAddress().setZipCode("02121");
+        newPerson1.getWorkAddress().setPhoneNumber("9065154155");
+
+
+
+       
+       
         
         Person newPerson2 = personDirectory.addPerson();
-        newPerson2.setFirstName("Rutuja");
-        newPerson2.setLastName("Ghogae");
-        newPerson2.setSSN("901289388");
-        newPerson2.setAge("25");
-        newPerson2.setHomeAddress(homeAddress2);
-        newPerson2.setWorkAddress(workAddress2);
+        newPerson2.setFirstName("Deepika");
+        newPerson2.setLastName("Dwarka");
+        newPerson2.setSSN(454147864);
+        newPerson2.setAge(25);
+        newPerson2.setWeight(70);
+        
+        
+        newPerson2.getHomeAddress().setStreetAddress("longwood");
+        newPerson2.getHomeAddress().setUnitNumber("apt 4");
+        newPerson2.getHomeAddress().setCity("Boston");
+        newPerson2.getHomeAddress().setState("MA");
+        newPerson2.getHomeAddress().setZipCode("02170");
+        newPerson2.getHomeAddress().setPhoneNumber("9878997846");
+        
+        newPerson2.getWorkAddress().setStreetAddress("Huntington");
+        newPerson2.getWorkAddress().setUnitNumber("8");
+        newPerson2.getWorkAddress().setCity("Boston");
+        newPerson2.getWorkAddress().setState("MA");
+        newPerson2.getWorkAddress().setZipCode("02129");
+        newPerson2.getWorkAddress().setPhoneNumber("9065154155");
+
         
         
         

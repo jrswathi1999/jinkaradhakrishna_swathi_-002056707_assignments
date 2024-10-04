@@ -15,14 +15,14 @@ import model.PersonDirectory;
  *
  * @author jrswa
  */
-public class ManageAccounts extends javax.swing.JPanel {
+public class ManagePersons extends javax.swing.JPanel {
     JPanel userProcessContainer;
     PersonDirectory personDirectory;
 
     /**
      * Creates new form ManageAccounts
      */
-    public ManageAccounts(JPanel container, PersonDirectory directory) {
+    public ManagePersons(JPanel container, PersonDirectory directory) {
         initComponents();
         userProcessContainer = container;
         personDirectory= directory;
@@ -45,7 +45,7 @@ public class ManageAccounts extends javax.swing.JPanel {
         viewdetailsbtn = new javax.swing.JButton();
         delaccbtn = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tblAccounts = new javax.swing.JTable();
+        tblPerson = new javax.swing.JTable();
         txtsearch = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
 
@@ -91,25 +91,33 @@ public class ManageAccounts extends javax.swing.JPanel {
             }
         });
 
-        tblAccounts.setBackground(new java.awt.Color(0, 0, 0));
-        tblAccounts.setFont(new java.awt.Font("Stencil", 0, 14)); // NOI18N
-        tblAccounts.setForeground(new java.awt.Color(204, 204, 255));
-        tblAccounts.setModel(new javax.swing.table.DefaultTableModel(
+        tblPerson.setBackground(new java.awt.Color(0, 0, 0));
+        tblPerson.setFont(new java.awt.Font("Stencil", 0, 14)); // NOI18N
+        tblPerson.setForeground(new java.awt.Color(204, 204, 255));
+        tblPerson.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
             },
             new String [] {
-                "Bank Name", "Routing Number", "Account Number", "Balance"
+                "First Name", "Last Name", "SSN", "Age", "Home Address", "Work Address"
             }
-        ));
-        jScrollPane1.setViewportView(tblAccounts);
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane1.setViewportView(tblPerson);
 
         jLabel1.setFont(new java.awt.Font("Stencil", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Manage Account");
+        jLabel1.setText("Person directory");
         jLabel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -119,23 +127,21 @@ public class ManageAccounts extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addComponent(backbtnm, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(143, 143, 143)
+                .addGap(309, 309, 309)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jScrollPane1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(16, 16, 16)
                         .addComponent(viewdetailsbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(delaccbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(86, 86, 86)
                         .addComponent(searchbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(41, 41, 41)
-                        .addComponent(txtsearch, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE)))
+                        .addComponent(txtsearch, javax.swing.GroupLayout.DEFAULT_SIZE, 598, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
@@ -149,14 +155,14 @@ public class ManageAccounts extends javax.swing.JPanel {
                     .addComponent(backbtnm, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(32, 32, 32)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 444, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(viewdetailsbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(delaccbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(searchbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtsearch, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(200, Short.MAX_VALUE))
+                .addContainerGap(105, Short.MAX_VALUE))
         );
 
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {delaccbtn, searchbtn, viewdetailsbtn});
@@ -173,46 +179,46 @@ public class ManageAccounts extends javax.swing.JPanel {
 
     private void delaccbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_delaccbtnActionPerformed
         // TODO add your handling code here:
-        int selectedRow = tblAccounts.getSelectedRow();
+        int selectedRow = tblPerson.getSelectedRow();
         
         if(selectedRow>=0)
         {
             
-            int dialogButton = JOptionPane.YES_NO_OPTION;//option dialog box for deleting the account
-            int dialogResult = JOptionPane.showConfirmDialog(null, "Are you sure you want to delete the account?", "Warning", dialogButton);
+            int dialogButton = JOptionPane.YES_NO_OPTION;//option dialog box for deleting the person
+            int dialogResult = JOptionPane.showConfirmDialog(null, "Are you sure you want to delete the person?", "Warning", dialogButton);
             if(dialogResult == JOptionPane.YES_OPTION)
             {
-                Person selectedAccount=(Person)tblAccounts.getValueAt(selectedRow, 0);
-                personDirectory.deleteAccount(selectedAccount);//methhod declared in account directory
+                Person selectedAccount=(Person)tblPerson.getValueAt(selectedRow, 0);
+                personDirectory.deletePerson(selectedAccount);//methhod declared in person directory
                 populateTable();//refresh list
             }
             
             else//if no is an option
             {
-                JOptionPane.showMessageDialog(null,"Please select an account from the list","Warning",JOptionPane.WARNING_MESSAGE);
+                JOptionPane.showMessageDialog(null,"Please select a person profile from the list","Warning",JOptionPane.WARNING_MESSAGE);
             }
         }
         else// if no row is selected
         {
-            JOptionPane.showMessageDialog(null,"Please select an account from the list","Warning",JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null,"Please select a person profile from the list","Warning",JOptionPane.WARNING_MESSAGE);
         }
     }//GEN-LAST:event_delaccbtnActionPerformed
 
     private void viewdetailsbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewdetailsbtnActionPerformed
         // TODO add your handling code here:
         // opening view details for the selected account
-        int selectedRow = tblAccounts.getSelectedRow();
+        int selectedRow = tblPerson.getSelectedRow();
         //check if user selected any account
         if(selectedRow>= 0){
             
-            Person selectedAccount= (Person) tblAccounts.getValueAt(selectedRow,0);//account which user selected
+            Person selectedAccount= (Person) tblPerson.getValueAt(selectedRow,0);//the row which user selected
             
-            ViewAccount panel= new ViewAccount(userProcessContainer,personDirectory,selectedAccount);
+            ViewPerson panel= new ViewPerson(userProcessContainer,personDirectory,selectedAccount);
             userProcessContainer.add("ViewAccount",panel);
             CardLayout layout=(CardLayout) userProcessContainer.getLayout();
             layout.next(userProcessContainer);
         } else {//if row is not selected
-            JOptionPane.showMessageDialog(null, "You need to select an account to view account details","Warning",JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null, "You need to select a profile to view  details","Warning",JOptionPane.WARNING_MESSAGE);
         }
     }//GEN-LAST:event_viewdetailsbtnActionPerformed
 
@@ -221,25 +227,25 @@ public class ManageAccounts extends javax.swing.JPanel {
         if(!txtsearch.getText().isBlank())
         {
             String accountNumber = txtsearch.getText();
-            Person foundAccount = personDirectory.searchPerson(accountNumber);
+            Person foundPerson = personDirectory.searchPerson(accountNumber);
             
-            if(foundAccount!=null)//if not empty, according to the method in account directory 
+            if(foundPerson!=null)//if not empty, according to the method in account directory 
             {
-                ViewAccount panel= new ViewAccount(userProcessContainer,personDirectory,foundAccount);
-                userProcessContainer.add("ViewAccount",panel);
+                ViewPerson panel= new ViewPerson(userProcessContainer,personDirectory,foundPerson);
+                userProcessContainer.add("ViewPerson",panel);
                 CardLayout layout=(CardLayout) userProcessContainer.getLayout();
                 layout.next(userProcessContainer);
                 
             }
             else
             {
-                JOptionPane.showMessageDialog(null, "Account not found. Try again");
+                JOptionPane.showMessageDialog(null, "Person not found. Try again");
                 //if account is not found among directory
             }
             
         }else
         {
-            JOptionPane.showMessageDialog(null, "Please type account number to view","Warning",JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Please type details to view","Warning",JOptionPane.WARNING_MESSAGE);
             //if search text field is empty
         }
         
@@ -252,22 +258,25 @@ public class ManageAccounts extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton searchbtn;
-    private javax.swing.JTable tblAccounts;
+    private javax.swing.JTable tblPerson;
     private javax.swing.JTextField txtsearch;
     private javax.swing.JButton viewdetailsbtn;
     // End of variables declaration//GEN-END:variables
 
     void populateTable() {
-      DefaultTableModel model = (DefaultTableModel) tblAccounts.getModel();
+      DefaultTableModel model = (DefaultTableModel) tblPerson.getModel();
       model.setRowCount(0);
       
-      for(Person a : accountDirectory.getAccount()){
+      for(Person p : personDirectory.getPerson()){
           
           Object[] row = new Object[4];
-          row[0] = a;
-          row[1] = a.getRountingNumber();
-          row[2]= a.getAccountNumber();
-          row[3]= String.valueOf(a.getBalance());
+          row[0] = p;
+          row[1] = p.getFirstName();
+          row[2]= p.getLastName();
+          row[3]= p.getSSN();
+          row[4]=p.getAge();
+          row[5]=p.getHomeAddress();
+          row[6]=p.getWorkAddress();
           
           model.addRow(row);
       }

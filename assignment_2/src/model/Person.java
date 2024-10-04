@@ -11,10 +11,36 @@ package model;
 public class Person {
     private String firstName;
     private String lastName;
-    private String SSN;
-    private String age;
+    private long SSN;//string to long
+    private int age;//string to int
+    private double weight;//added new variable
     private Address homeAddress;
     private Address workAddress;
+
+    public long getSSN() {
+        return SSN;
+    }
+
+    public void setSSN(long SSN) {
+        this.SSN = SSN;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+   
 
     public String getFirstName() {
         return firstName;
@@ -31,23 +57,6 @@ public class Person {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
-    public String getSSN() {
-        return SSN;
-    }
-
-    public void setSSN(String SSN) {
-        this.SSN = SSN;
-    }
-
-    public String getAge() {
-        return age;
-    }
-
-    public void setAge(String age) {
-        this.age = age;
-    }
-
     public Address getHomeAddress() {
         return homeAddress;
     }

@@ -22,52 +22,56 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="JPanelHomeAdd" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel3" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace pref="140" max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="JPanelWorkAdd" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel1" min="-2" pref="120" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+              <EmptySpace pref="65" max="32767" attributes="0"/>
+              <Component id="JPanelHomeAdd" linkSize="15" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+              <Component id="JPanelWorkAdd1" linkSize="15" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
           </Group>
-          <Group type="102" alignment="0" attributes="0">
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="accountlb" linkSize="1" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
-                              <Component id="balancelb" linkSize="1" min="-2" pref="115" max="-2" attributes="0"/>
-                              <Component id="banknamelb" linkSize="1" min="-2" max="-2" attributes="0"/>
-                              <Component id="weightlb1" linkSize="1" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="txtLastName" linkSize="3" alignment="0" max="32767" attributes="0"/>
-                              <Component id="txtSSN" linkSize="3" max="32767" attributes="0"/>
-                              <Component id="txtAge" linkSize="3" alignment="0" max="32767" attributes="0"/>
-                              <Component id="txtWeight" alignment="0" min="-2" pref="206" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="routinglb" linkSize="1" min="-2" pref="190" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="txtFirstName" linkSize="3" min="-2" pref="206" max="-2" attributes="0"/>
-                      </Group>
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                      <Component id="backbtnv" min="-2" pref="116" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="352" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" pref="257" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="511" max="-2" attributes="0"/>
-                          <Component id="createaccbtn" min="-2" pref="210" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+                      <Component id="jLabel3" min="-2" pref="120" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="445" max="-2" attributes="0"/>
+                      <Component id="jLabel2" min="-2" pref="120" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="372" max="-2" attributes="0"/>
+                      <Component id="savebtnv" min="-2" pref="160" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="236" max="-2" attributes="0"/>
+                      <Component id="updatebtnv" min="-2" pref="158" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="356" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="accountlb" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
+                                  <Component id="balancelb" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
+                                  <Component id="banknamelb" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="weightlb1" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="routinglb" min="-2" pref="190" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                          <Component id="backbtnc" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="294" max="-2" attributes="0"/>
-                          <Component id="createLabel" min="-2" pref="417" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="txtWeight" min="-2" pref="298" max="-2" attributes="0"/>
+                          <Component id="txtSSN" linkSize="14" alignment="0" min="-2" pref="298" max="-2" attributes="0"/>
+                          <Component id="txtLastName" linkSize="14" alignment="0" min="-2" pref="298" max="-2" attributes="0"/>
+                          <Component id="txtAge" linkSize="14" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
+                          <Component id="txtFirstName" linkSize="14" min="-2" pref="229" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -78,66 +82,121 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="createLabel" min="-2" pref="75" max="-2" attributes="0"/>
-                  <Component id="backbtnc" min="-2" pref="32" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="routinglb" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtFirstName" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
               <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="accountlb" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtLastName" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="banknamelb" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtSSN" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="backbtnv" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                  <Component id="jLabel1" alignment="3" min="-2" pref="71" max="-2" attributes="0"/>
               </Group>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                      <Component id="balancelb" linkSize="2" min="-2" max="-2" attributes="0"/>
-                  </Group>
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="txtAge" linkSize="4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtLastName" linkSize="9" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="accountlb" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtSSN" linkSize="9" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="banknamelb" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="routinglb" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                          <Component id="txtFirstName" linkSize="9" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="weightlb1" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtAge" linkSize="9" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="balancelb" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="18" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="weightlb1" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtWeight" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="JPanelWorkAdd" min="-2" max="-2" attributes="0"/>
-                  <Component id="JPanelHomeAdd" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="JPanelHomeAdd" linkSize="16" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="savebtnv" linkSize="4" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
+                          <Component id="updatebtnv" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Component id="JPanelWorkAdd1" linkSize="16" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
-              <Component id="createaccbtn" min="-2" pref="57" max="-2" attributes="0"/>
-              <EmptySpace pref="47" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="138" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JButton" name="backbtnc">
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Stencil" size="24" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="View person"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+            <BevelBorder/>
+          </Border>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="savebtnv">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="0" green="0" red="0" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Stencil" size="14" style="0"/>
+          <Font name="Stencil" size="18" style="0"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="cc" red="cc" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Save"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="savebtnvActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="updatebtnv">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Stencil" size="18" style="0"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="cc" red="cc" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Update"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="updatebtnvActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="backbtnv">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Stencil" size="18" style="0"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="cc" red="cc" type="rgb"/>
@@ -145,19 +204,8 @@
         <Property name="text" type="java.lang.String" value="&lt;&lt;&lt;Back"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backbtncActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backbtnvActionPerformed"/>
       </Events>
-    </Component>
-    <Component class="javax.swing.JLabel" name="routinglb">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Stencil" size="14" style="0"/>
-        </Property>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="33" green="33" red="0" type="rgb"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="first name"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="accountlb">
       <Properties>
@@ -168,6 +216,14 @@
           <Color blue="33" green="33" red="0" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Last number"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Stencil" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="work Address"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="banknamelb">
@@ -181,6 +237,180 @@
         <Property name="text" type="java.lang.String" value="social security number"/>
       </Properties>
     </Component>
+    <Container class="javax.swing.JPanel" name="JPanelWorkAdd1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="87" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="WtxtState2" linkSize="10" alignment="1" pref="215" max="32767" attributes="0"/>
+                                  <Component id="WtxtZip2" linkSize="10" alignment="1" pref="215" max="32767" attributes="0"/>
+                                  <Component id="WtxtPhone2" linkSize="10" alignment="1" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="245" max="-2" attributes="0"/>
+                              <Component id="WtxtUnitNo2" linkSize="10" min="-2" pref="210" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="stateLBL2" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
+                              <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="cityLbl2" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="WtxtCity2" linkSize="10" min="-2" pref="215" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="unitLBL2" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="streetaddLBL2" min="-2" pref="190" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="WtxtStreetAdd2" linkSize="10" min="-2" pref="215" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Component id="zipLBL2" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
+                              <Component id="phoneLBL2" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace pref="79" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="WtxtStreetAdd2" linkSize="11" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="streetaddLBL2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="WtxtUnitNo2" linkSize="11" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="unitLBL2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="WtxtCity2" linkSize="11" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="cityLbl2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="WtxtState2" linkSize="11" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="stateLBL2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="WtxtZip2" linkSize="11" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="zipLBL2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="WtxtPhone2" linkSize="11" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="phoneLBL2" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="cityLbl2">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Stencil" size="14" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="33" green="33" red="0" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="city"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="zipLBL2">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Stencil" size="14" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="33" green="33" red="0" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="zip code"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="WtxtStreetAdd2">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="WtxtStreetAdd2ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="WtxtUnitNo2">
+        </Component>
+        <Component class="javax.swing.JTextField" name="WtxtCity2">
+        </Component>
+        <Component class="javax.swing.JTextField" name="WtxtPhone2">
+        </Component>
+        <Component class="javax.swing.JLabel" name="streetaddLBL2">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Stencil" size="14" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="33" green="33" red="0" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Street address"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="unitLBL2">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Stencil" size="14" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="33" green="33" red="0" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="unit number"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="phoneLBL2">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Stencil" size="14" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="33" green="33" red="0" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Phone No."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="stateLBL2">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Stencil" size="14" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="33" green="33" red="0" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="State"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="WtxtZip2">
+        </Component>
+        <Component class="javax.swing.JTextField" name="WtxtState2">
+        </Component>
+      </SubComponents>
+    </Container>
     <Component class="javax.swing.JLabel" name="balancelb">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -201,38 +431,15 @@
     </Component>
     <Component class="javax.swing.JTextField" name="txtSSN">
     </Component>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Stencil" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Home Address"/>
+      </Properties>
+    </Component>
     <Component class="javax.swing.JTextField" name="txtAge">
-    </Component>
-    <Component class="javax.swing.JButton" name="createaccbtn">
-      <Properties>
-        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="0" green="0" red="0" type="rgb"/>
-        </Property>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Stencil" size="18" style="0"/>
-        </Property>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="cc" red="cc" type="rgb"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Create "/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="createaccbtnActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JLabel" name="createLabel">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Stencil" size="24" style="1"/>
-        </Property>
-        <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="Create person account"/>
-        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-          <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
-            <BevelBorder/>
-          </Border>
-        </Property>
-      </Properties>
     </Component>
     <Container class="javax.swing.JPanel" name="JPanelHomeAdd">
       <Properties>
@@ -246,43 +453,43 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <Group type="103" groupAlignment="1" attributes="0">
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="87" max="32767" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="HtxtPhone" linkSize="5" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="HtxtState" alignment="1" min="-2" pref="215" max="-2" attributes="0"/>
-                                  <Component id="HtxtZip" linkSize="5" alignment="1" min="-2" pref="215" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="HtxtState" linkSize="12" alignment="1" pref="215" max="32767" attributes="0"/>
+                                  <Component id="HtxtZip" linkSize="12" alignment="1" pref="215" max="32767" attributes="0"/>
+                                  <Component id="HtxtPhone" linkSize="12" alignment="1" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="245" max="-2" attributes="0"/>
-                              <Component id="HtxtUnitNo" linkSize="5" min="-2" pref="210" max="-2" attributes="0"/>
+                              <Component id="HtxtUnitNo" linkSize="12" min="-2" pref="210" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="stateLBL" linkSize="5" min="-2" pref="115" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Component id="cityLbl" linkSize="5" min="-2" max="-2" attributes="0"/>
+                              <Component id="stateLBL" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
+                              <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="cityLbl" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="HtxtCity" min="-2" pref="215" max="-2" attributes="0"/>
+                                      <Component id="HtxtCity" linkSize="12" min="-2" pref="215" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="unitLBL" linkSize="5" min="-2" pref="115" max="-2" attributes="0"/>
-                                  <Group type="102" attributes="0">
-                                      <Component id="streetaddLBL" linkSize="5" min="-2" pref="190" max="-2" attributes="0"/>
+                                  <Component id="unitLBL" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="streetaddLBL" min="-2" pref="190" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="HtxtStreetAdd" min="-2" pref="215" max="-2" attributes="0"/>
+                                      <Component id="HtxtStreetAdd" linkSize="12" min="-2" pref="215" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <Component id="zipLBL" linkSize="5" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
-                              <Component id="phoneLBL" linkSize="5" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
+                              <Component id="zipLBL" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
+                              <Component id="phoneLBL" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
-                  <EmptySpace pref="68" max="32767" attributes="0"/>
+                  <EmptySpace pref="79" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -292,32 +499,32 @@
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="HtxtStreetAdd" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="streetaddLBL" linkSize="6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="streetaddLBL" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="HtxtUnitNo" linkSize="6" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="unitLBL" linkSize="6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="HtxtUnitNo" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="unitLBL" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="HtxtCity" linkSize="6" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="cityLbl" linkSize="6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="HtxtCity" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="cityLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="HtxtState" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="stateLBL" linkSize="6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="stateLBL" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="HtxtZip" linkSize="6" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="zipLBL" linkSize="6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="HtxtZip" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="zipLBL" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="HtxtPhone" linkSize="6" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="phoneLBL" linkSize="6" min="-2" max="-2" attributes="0"/>
+                      <Component id="HtxtPhone" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="phoneLBL" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
               </Group>
@@ -408,194 +615,15 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="routinglb">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Stencil" size="14" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="work Address"/>
-      </Properties>
-    </Component>
-    <Container class="javax.swing.JPanel" name="JPanelWorkAdd">
-      <Properties>
-        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="33" red="0" type="rgb"/>
         </Property>
-      </Properties>
-
-      <Layout>
-        <DimensionLayout dim="0">
-          <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <Group type="103" groupAlignment="1" attributes="0">
-                      <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="87" max="32767" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="WtxtPhone1" linkSize="7" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="WtxtState1" linkSize="7" alignment="1" min="-2" pref="215" max="-2" attributes="0"/>
-                                  <Component id="WtxtZip1" linkSize="7" alignment="1" min="-2" pref="215" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="245" max="-2" attributes="0"/>
-                              <Component id="WtxtUnitNo1" linkSize="7" min="-2" pref="210" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="stateLBL1" linkSize="9" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
-                              <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="cityLbl1" linkSize="9" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="WtxtCity1" linkSize="7" min="-2" pref="215" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="unitLBL1" linkSize="9" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="streetaddLBL1" linkSize="9" min="-2" pref="190" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="WtxtStreetAdd1" linkSize="7" min="-2" pref="215" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Component id="zipLBL1" linkSize="9" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
-                              <Component id="phoneLBL1" linkSize="9" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                  </Group>
-                  <EmptySpace pref="79" max="32767" attributes="0"/>
-              </Group>
-          </Group>
-        </DimensionLayout>
-        <DimensionLayout dim="1">
-          <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="WtxtStreetAdd1" linkSize="8" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="streetaddLBL1" linkSize="10" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="WtxtUnitNo1" linkSize="8" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="unitLBL1" linkSize="10" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="WtxtCity1" linkSize="8" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="cityLbl1" linkSize="10" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="WtxtState1" linkSize="8" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="stateLBL1" linkSize="10" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="WtxtZip1" linkSize="8" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="zipLBL1" linkSize="10" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="WtxtPhone1" linkSize="8" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="phoneLBL1" linkSize="10" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-              </Group>
-          </Group>
-        </DimensionLayout>
-      </Layout>
-      <SubComponents>
-        <Component class="javax.swing.JLabel" name="cityLbl1">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Stencil" size="14" style="0"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="33" green="33" red="0" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="city"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="zipLBL1">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Stencil" size="14" style="0"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="33" green="33" red="0" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="zip code"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="WtxtStreetAdd1">
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="WtxtStreetAdd1ActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JTextField" name="WtxtUnitNo1">
-        </Component>
-        <Component class="javax.swing.JTextField" name="WtxtCity1">
-        </Component>
-        <Component class="javax.swing.JTextField" name="WtxtPhone1">
-        </Component>
-        <Component class="javax.swing.JLabel" name="streetaddLBL1">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Stencil" size="14" style="0"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="33" green="33" red="0" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Street address"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="unitLBL1">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Stencil" size="14" style="0"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="33" green="33" red="0" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="unit number"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="phoneLBL1">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Stencil" size="14" style="0"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="33" green="33" red="0" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Phone No."/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="stateLBL1">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Stencil" size="14" style="0"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="33" green="33" red="0" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="State"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="WtxtZip1">
-        </Component>
-        <Component class="javax.swing.JTextField" name="WtxtState1">
-        </Component>
-      </SubComponents>
-    </Container>
-    <Component class="javax.swing.JLabel" name="jLabel3">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Stencil" size="14" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Home Address"/>
+        <Property name="text" type="java.lang.String" value="first name"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="weightlb1">
