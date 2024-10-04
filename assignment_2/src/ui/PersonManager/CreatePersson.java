@@ -8,6 +8,7 @@ import java.awt.CardLayout;
 
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import model.Address;
 import model.Person;
 import model.PersonDirectory;
 
@@ -69,7 +70,7 @@ public class CreatePersson extends javax.swing.JPanel {
         cityLbl1 = new javax.swing.JLabel();
         zipLBL1 = new javax.swing.JLabel();
         WtxtStreetAdd1 = new javax.swing.JTextField();
-        WtxtUnitno1 = new javax.swing.JTextField();
+        WtxtUnitNo1 = new javax.swing.JTextField();
         WtxtCity1 = new javax.swing.JTextField();
         WtxtPhone1 = new javax.swing.JTextField();
         streetaddLBL1 = new javax.swing.JLabel();
@@ -222,9 +223,9 @@ public class CreatePersson extends javax.swing.JPanel {
                     .addComponent(HtxtZip, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(zipLBL))
                 .addGap(18, 18, 18)
-                .addGroup(JPanelHomeAddLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(phoneLBL)
-                    .addComponent(HtxtPhone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(JPanelHomeAddLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(HtxtPhone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(phoneLBL))
                 .addGap(15, 15, 15))
         );
 
@@ -280,7 +281,7 @@ public class CreatePersson extends javax.swing.JPanel {
                                 .addComponent(WtxtZip1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGroup(JPanelWorkAddLayout.createSequentialGroup()
                             .addGap(245, 245, 245)
-                            .addComponent(WtxtUnitno1, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(WtxtUnitNo1, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(JPanelWorkAddLayout.createSequentialGroup()
                         .addGap(34, 34, 34)
                         .addGroup(JPanelWorkAddLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -300,7 +301,7 @@ public class CreatePersson extends javax.swing.JPanel {
                 .addContainerGap(79, Short.MAX_VALUE))
         );
 
-        JPanelWorkAddLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {WtxtCity1, WtxtPhone1, WtxtState1, WtxtStreetAdd1, WtxtUnitno1, WtxtZip1});
+        JPanelWorkAddLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {WtxtCity1, WtxtPhone1, WtxtState1, WtxtStreetAdd1, WtxtUnitNo1, WtxtZip1});
 
         JPanelWorkAddLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {cityLbl1, phoneLBL1, stateLBL1, streetaddLBL1, unitLBL1, zipLBL1});
 
@@ -313,7 +314,7 @@ public class CreatePersson extends javax.swing.JPanel {
                     .addComponent(streetaddLBL1))
                 .addGap(18, 18, 18)
                 .addGroup(JPanelWorkAddLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(WtxtUnitno1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(WtxtUnitNo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(unitLBL1))
                 .addGap(18, 18, 18)
                 .addGroup(JPanelWorkAddLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -328,13 +329,13 @@ public class CreatePersson extends javax.swing.JPanel {
                     .addComponent(WtxtZip1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(zipLBL1))
                 .addGap(18, 18, 18)
-                .addGroup(JPanelWorkAddLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(phoneLBL1)
-                    .addComponent(WtxtPhone1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(JPanelWorkAddLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(WtxtPhone1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(phoneLBL1))
                 .addGap(15, 15, 15))
         );
 
-        JPanelWorkAddLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {WtxtCity1, WtxtPhone1, WtxtState1, WtxtStreetAdd1, WtxtUnitno1, WtxtZip1});
+        JPanelWorkAddLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {WtxtCity1, WtxtPhone1, WtxtState1, WtxtStreetAdd1, WtxtUnitNo1, WtxtZip1});
 
         JPanelWorkAddLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {cityLbl1, phoneLBL1, stateLBL1, streetaddLBL1, unitLBL1, zipLBL1});
 
@@ -448,13 +449,40 @@ public class CreatePersson extends javax.swing.JPanel {
         String SSN= txtSSN.getText();
         String age= txtAge.getText();
         
+        // geting test feilds of home address
+        String hStreet = HtxtStreetAdd.getText();
+        String hUnit = HtxtUnitNo.getText();
+        String hCity = HtxtCity.getText();
+        String hState = HtxtState.getText();
+        String hZip = HtxtZip.getText();
+        String hPhone = HtxtPhone.getText();
         
+        //getting values of work address
+        String wStreet = WtxtStreetAdd1.getText();
+        String wUnit = WtxtUnitNo1.getText();
+        String wCity = WtxtCity1.getText();
+        String wState = WtxtState1.getText();
+        String wZip = WtxtZip1.getText();
+        String wPhone = WtxtPhone1.getText();
 
         if(firstName.isBlank() || lastName.isBlank()|| SSN.isBlank()|| age.isBlank())
         {
             JOptionPane.showMessageDialog(this,"All fields are mandatory","Error",JOptionPane.ERROR_MESSAGE);
             //validification for create account , checking if the text fields are empty
             //stops the process if it's empty
+            return;
+        }
+        
+        
+        // validation for home address and work address
+         
+        if(hStreet.isBlank()||hUnit.isBlank()||hCity.isBlank()||hState.isBlank()||hZip.isBlank()||hPhone.isBlank()){
+            JOptionPane.showMessageDialog(this,"All work address feilds are mandatory","Error",JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        
+        if(wStreet.isBlank()|| wUnit.isBlank()|| wCity.isBlank()||wState.isBlank()||wZip.isBlank()|| wPhone.isBlank()){
+            JOptionPane.showMessageDialog(this,"All work address feilds are mandatory","Error",JOptionPane.ERROR_MESSAGE);
             return;
         }
         
@@ -472,6 +500,12 @@ public class CreatePersson extends javax.swing.JPanel {
         p.setLastName(lastName);
         p.setSSN(SSN);
         p.setAge(age);
+        
+        //address objects for home and work
+        
+        Address homeAdd = new Address(hStreet, hUnit, hCity,hState,hZip,hPhone);
+        Address workAdd = new Address(wStreet, wUnit, wCity,wState,wZip,wPhone);
+        
         //setting account details
         JOptionPane.showMessageDialog(null, "Account Created!", "Success", JOptionPane.INFORMATION_MESSAGE);
         
@@ -509,7 +543,7 @@ public class CreatePersson extends javax.swing.JPanel {
     private javax.swing.JTextField WtxtPhone1;
     private javax.swing.JTextField WtxtState1;
     private javax.swing.JTextField WtxtStreetAdd1;
-    private javax.swing.JTextField WtxtUnitno1;
+    private javax.swing.JTextField WtxtUnitNo1;
     private javax.swing.JTextField WtxtZip1;
     private javax.swing.JLabel accountlb;
     private javax.swing.JButton backbtnc;
