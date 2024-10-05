@@ -107,7 +107,7 @@ public class PersonMngWorkArea extends javax.swing.JPanel {
     private void mngaccbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mngaccbtnActionPerformed
         // TODO add your handling code here:
         ManagePersons panel = new ManagePersons(userProcessContainer,accountDirectory);
-        userProcessContainer.add("ManageAccounts", panel);
+        userProcessContainer.add("ManagePersons", panel);
         
         CardLayout layout= (CardLayout)userProcessContainer.getLayout();
         layout.next(userProcessContainer);//adding manage account to next panel

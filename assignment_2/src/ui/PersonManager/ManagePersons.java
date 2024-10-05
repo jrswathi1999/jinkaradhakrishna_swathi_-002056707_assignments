@@ -269,7 +269,7 @@ public class ManagePersons extends javax.swing.JPanel {
       
       for(Person p : personDirectory.getPerson()){
           
-          Object[] row = new Object[4];
+          Object[] row = new Object[7];
           row[0] = p;
           row[1] = p.getFirstName();
           row[2]= p.getLastName();

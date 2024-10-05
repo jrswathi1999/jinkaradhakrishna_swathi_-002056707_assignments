@@ -170,7 +170,7 @@ public class MainJFrameAssignment extends javax.swing.JFrame {
     private void generateDemoData() {// adding demo data which will be present at the start 
 //        Address homeAddress1 = new Address("vinal Street", "apt 2","Boston","MA","02134","9083049809");
 //        Address workAddress1 = new Address("Parker Hill", "apt 2","Boston","MA","02120","98779848465");
-//        
+//      
         Person newPerson1 = personDirectory.addPerson();
         newPerson1.setFirstName("Aman");
         newPerson1.setLastName("Raj");
@@ -178,47 +178,55 @@ public class MainJFrameAssignment extends javax.swing.JFrame {
         newPerson1.setAge(19);
         newPerson1.setWeight(60.8);
         
+        Address homeAdd1= new Address();
+//        newPerson1.getHomeAddress().setStreetAddress("vinal street");
+//        newPerson1.getHomeAddress().setUnitNumber("apt 2");
+        homeAdd1.setCity("Boston");
+//        newPerson1.getHomeAddress().setState("MA");
+        homeAdd1.setZipCode("02130");
+//        newPerson1.getHomeAddress().setPhoneNumber("9083049809");
+        newPerson1.setHomeAddress(homeAdd1);
         
-        newPerson1.getHomeAddress().setStreetAddress("vinal street");
-        newPerson1.getHomeAddress().setUnitNumber("apt 2");
-        newPerson1.getHomeAddress().setCity("Boston");
-        newPerson1.getHomeAddress().setState("MA");
-        newPerson1.getHomeAddress().setZipCode("02130");
-        newPerson1.getHomeAddress().setPhoneNumber("9083049809");
-        
-        newPerson1.getWorkAddress().setStreetAddress("Parker Hill");
-        newPerson1.getWorkAddress().setUnitNumber("apt 2");
-        newPerson1.getWorkAddress().setCity("Boston");
-        newPerson1.getWorkAddress().setState("MA");
-        newPerson1.getWorkAddress().setZipCode("02121");
-        newPerson1.getWorkAddress().setPhoneNumber("9065154155");
+//        newPerson1.getWorkAddress().setStreetAddress("Parker Hill");
+//        newPerson1.getWorkAddress().setUnitNumber("apt 2");
+//        newPerson1.getWorkAddress().setCity("Boston");
+//        newPerson1.getWorkAddress().setState("MA");
+//        newPerson1.getWorkAddress().setZipCode("02121");
+//        newPerson1.getWorkAddress().setPhoneNumber("9065154155");
 
-
+        Address workAdd1= new Address();
+//        newPerson1.getHomeAddress().setStreetAddress("vinal street");
+//        newPerson1.getHomeAddress().setUnitNumber("apt 2");
+        workAdd1.setCity("Boston");
+//        newPerson1.getHomeAddress().setState("MA");
+        workAdd1.setZipCode("02130");
+//        newPerson1.getHomeAddress().setPhoneNumber("9083049809");
+        newPerson1.setWorkAddress(workAdd1);
 
        
        
         
-        Person newPerson2 = personDirectory.addPerson();
-        newPerson2.setFirstName("Deepika");
-        newPerson2.setLastName("Dwarka");
-        newPerson2.setSSN(454147864);
-        newPerson2.setAge(25);
-        newPerson2.setWeight(70);
-        
-        
-        newPerson2.getHomeAddress().setStreetAddress("longwood");
-        newPerson2.getHomeAddress().setUnitNumber("apt 4");
-        newPerson2.getHomeAddress().setCity("Boston");
-        newPerson2.getHomeAddress().setState("MA");
-        newPerson2.getHomeAddress().setZipCode("02170");
-        newPerson2.getHomeAddress().setPhoneNumber("9878997846");
-        
-        newPerson2.getWorkAddress().setStreetAddress("Huntington");
-        newPerson2.getWorkAddress().setUnitNumber("8");
-        newPerson2.getWorkAddress().setCity("Boston");
-        newPerson2.getWorkAddress().setState("MA");
-        newPerson2.getWorkAddress().setZipCode("02129");
-        newPerson2.getWorkAddress().setPhoneNumber("9065154155");
+//        Person newPerson2 = personDirectory.addPerson();
+//        newPerson2.setFirstName("Deepika");
+//        newPerson2.setLastName("Dwarka");
+//        newPerson2.setSSN(454147864);
+//        newPerson2.setAge(25);
+//        newPerson2.setWeight(70);
+//        
+//        
+//        newPerson2.getHomeAddress().setStreetAddress("longwood");
+//        newPerson2.getHomeAddress().setUnitNumber("apt 4");
+//        newPerson2.getHomeAddress().setCity("Boston");
+//        newPerson2.getHomeAddress().setState("MA");
+//        newPerson2.getHomeAddress().setZipCode("02170");
+//        newPerson2.getHomeAddress().setPhoneNumber("9878997846");
+//        
+//        newPerson2.getWorkAddress().setStreetAddress("Huntington");
+//        newPerson2.getWorkAddress().setUnitNumber("8");
+//        newPerson2.getWorkAddress().setCity("Boston");
+//        newPerson2.getWorkAddress().setState("MA");
+//        newPerson2.getWorkAddress().setZipCode("02129");
+//        newPerson2.getWorkAddress().setPhoneNumber("9065154155");
 
         
         

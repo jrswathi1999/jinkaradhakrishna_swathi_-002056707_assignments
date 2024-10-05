@@ -548,6 +548,22 @@ public class ViewPerson extends javax.swing.JPanel {
         person.setLastName(lastName);
         person.setSSN(SSN);
         person.setAge(age);
+       
+        
+        person.getHomeAddress().setStreetAddress(hStreet);
+        person.getHomeAddress().setUnitNumber(hUnit);
+        person.getHomeAddress().setCity(hCity);
+        person.getHomeAddress().setState(hState);
+        person.getHomeAddress().setZipCode(hPhone);
+        person.getHomeAddress().setPhoneNumber(hPhone);
+
+
+        person.getWorkAddress().setStreetAddress(wStreet);
+        person.getWorkAddress().setUnitNumber(wUnit);
+        person.getWorkAddress().setCity(wCity);
+        person.getWorkAddress().setState(wState);
+        person.getWorkAddress().setZipCode(wPhone);
+        person.getWorkAddress().setPhoneNumber(wPhone);
         
         
         //address objects for home and work
@@ -557,9 +573,7 @@ public class ViewPerson extends javax.swing.JPanel {
 //        
         //setting home address and work address for the person class
         
-        person.setHomeAddress(getUpdateHomeAddress());
-        person.setWorkAddress(getUpdateWorkAddress());
-        
+      
         JOptionPane.showMessageDialog(null,"Account update successful","Sucess",JOptionPane.WARNING_MESSAGE);
         setViewMode();  
         
@@ -644,9 +658,18 @@ public class ViewPerson extends javax.swing.JPanel {
     private void refreshTextFields() {
         txtFirstName.setText(person.getFirstName());
         txtLastName.setText(person.getLastName());
-        txtSSN.setText(person.getSSN());
-        txtAge.setText(person.getAge());
-        homeAddress.setText(person.getHomeAddress());
+        txtSSN.setText(Long.toString(person.getSSN()));
+        txtAge.setText(Integer.toString(person.getAge()));
+        txtWeight.setText(Double.toString(person.getWeight()));
+        
+        HtxtCity.setText(person.getHomeAddress().getCity());
+        HtxtZip.setText(person.getHomeAddress().getZipCode());
+        
+        WtxtCity1.setText(person.getWorkAddress().getCity());
+        WtxtZip1.setText(person.getWorkAddress().getZipCode());
+        
+        
+        
     }
 
     private void setViewMode() {
