@@ -96,23 +96,15 @@ public class ManagePersons extends javax.swing.JPanel {
         tblPerson.setForeground(new java.awt.Color(204, 204, 255));
         tblPerson.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null}
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null}
             },
             new String [] {
-                "First Name", "Last Name", "SSN", "Age", "Home Address", "Work Address"
+                "First Name", "Last Name", "SSN", "Age", "Weight", "Home Address", "Work Address"
             }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false
-            };
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
+        ));
         jScrollPane1.setViewportView(tblPerson);
 
         jLabel1.setFont(new java.awt.Font("Stencil", 1, 24)); // NOI18N
@@ -214,7 +206,7 @@ public class ManagePersons extends javax.swing.JPanel {
             Person selectedAccount= (Person) tblPerson.getValueAt(selectedRow,0);//the row which user selected
             
             ViewPerson panel= new ViewPerson(userProcessContainer,personDirectory,selectedAccount);
-            userProcessContainer.add("ViewAccount",panel);
+            userProcessContainer.add("ViewPerson",panel);
             CardLayout layout=(CardLayout) userProcessContainer.getLayout();
             layout.next(userProcessContainer);
         } else {//if row is not selected
@@ -269,14 +261,15 @@ public class ManagePersons extends javax.swing.JPanel {
       
       for(Person p : personDirectory.getPerson()){
           
-          Object[] row = new Object[7];
+          Object[] row = new Object[8];
           row[0] = p;
           row[1] = p.getFirstName();
           row[2]= p.getLastName();
           row[3]= p.getSSN();
           row[4]=p.getAge();
-          row[5]=p.getHomeAddress();
-          row[6]=p.getWorkAddress();
+          row[5]=p.getWeight();
+          row[6]=p.getHomeAddress().toString();
+          row[7]=p.getWorkAddress().toString();
           
           model.addRow(row);
       }

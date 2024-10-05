@@ -16,6 +16,12 @@ public class Person {
     private double weight;//added new variable
     private Address homeAddress;
     private Address workAddress;
+    
+    public Person(){
+        this.homeAddress= new Address();
+        this.workAddress=new Address();
+    }
+   
 
     public long getSSN() {
         return SSN;
