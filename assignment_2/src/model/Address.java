@@ -15,15 +15,6 @@ public class Address {
     private String state;
     private String zipCode;
     private String phoneNumber;
-
-//    public Address(String streetAddress,String unitNumber, String city,String state, String zipCode, String phoneNumber){
-//        this.streetAddress= streetAddress;
-//        this.unitNumber= unitNumber;
-//        this.city= city;
-//        this.state=state;
-//        this.zipCode=zipCode;
-//        this.phoneNumber= phoneNumber;
-//    }
     
     
     public String getStreetAddress() {

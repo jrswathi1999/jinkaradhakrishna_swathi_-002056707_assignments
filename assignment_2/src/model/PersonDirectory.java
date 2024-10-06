@@ -27,12 +27,12 @@ public class PersonDirectory {
     
     
     public Person addPerson(){
-        Person person= new Person();//method for adding new account
+        Person person= new Person();//method for adding new person
         persons.add(person);
         return person;
     }
     
-    public void deletePerson(Person person){//method for deleting account
+    public void deletePerson(Person person){//method for deleting person profile
         persons.remove(person);
     }
     

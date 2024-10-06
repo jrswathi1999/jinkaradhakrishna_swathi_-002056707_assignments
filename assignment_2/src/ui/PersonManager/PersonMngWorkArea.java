@@ -92,7 +92,7 @@ public class PersonMngWorkArea extends javax.swing.JPanel {
         userProcessContainer.add("CreateAccount", panel);// adding this panel to container
         
         CardLayout layout= (CardLayout)userProcessContainer.getLayout();
-        layout.next(userProcessContainer);//adding create acc to next panel
+        layout.next(userProcessContainer);//adding create profile to next panel
     }//GEN-LAST:event_createaccbtnActionPerformed
 
     private void mngaccbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mngaccbtnActionPerformed
@@ -101,7 +101,7 @@ public class PersonMngWorkArea extends javax.swing.JPanel {
         userProcessContainer.add("ManagePersons", panel);
         
         CardLayout layout= (CardLayout)userProcessContainer.getLayout();
-        layout.next(userProcessContainer);//adding manage account to next panel
+        layout.next(userProcessContainer);//adding JTable panel to next panel
     }//GEN-LAST:event_mngaccbtnActionPerformed
 
 

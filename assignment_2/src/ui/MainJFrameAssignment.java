@@ -167,9 +167,8 @@ public class MainJFrameAssignment extends javax.swing.JFrame {
     private javax.swing.JPanel userProcessContainer;
     // End of variables declaration//GEN-END:variables
 
-    private void generateDemoData() {// adding demo data which will be present at the start 
-//        Address homeAddress1 = new Address("vinal Street", "apt 2","Boston","MA","02134","9083049809");
-//        Address workAddress1 = new Address("Parker Hill", "apt 2","Boston","MA","02120","98779848465");
+    private void generateDemoData() {// adding 5 demo data which will be present at the start 
+//       
         
 
         //adding first person
@@ -189,8 +188,6 @@ public class MainJFrameAssignment extends javax.swing.JFrame {
         homeAdd1.setPhoneNumber("9083049809");
         newPerson1.setHomeAddress(homeAdd1);
         
-
-
         Address workAdd1= new Address();
         workAdd1.setStreetAddress("vinal street");
         workAdd1.setUnitNumber("apt 2");

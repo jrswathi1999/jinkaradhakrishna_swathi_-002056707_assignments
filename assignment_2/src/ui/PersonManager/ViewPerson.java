@@ -541,7 +541,7 @@ public class ViewPerson extends javax.swing.JPanel {
          
         
         
-        
+        //setting person from save button
         person.setFirstName(firstName);
         person.setLastName(lastName);
         person.setSSN(SSN);
@@ -571,7 +571,7 @@ public class ViewPerson extends javax.swing.JPanel {
 //        
         //setting home address and work address for the person class
         
-      
+       //dialog box for profile success messsge
         JOptionPane.showMessageDialog(null,"Account update successful","Sucess",JOptionPane.WARNING_MESSAGE);
         setViewMode();  
         
@@ -654,6 +654,7 @@ public class ViewPerson extends javax.swing.JPanel {
     // End of variables declaration//GEN-END:variables
 
     private void refreshTextFields() {
+        //updating the person 
         txtFirstName.setText(person.getFirstName());
         txtLastName.setText(person.getLastName());
         txtSSN.setText(Long.toString(person.getSSN()));
@@ -678,12 +679,7 @@ public class ViewPerson extends javax.swing.JPanel {
             WtxtZip2.setText(person.getWorkAddress().getZipCode());
             WtxtPhone2.setText(person.getWorkAddress().getPhoneNumber());
             
-        }
-        
-       
-        
-        
-        
+        }          
     }
 
     private void setViewMode() {
@@ -735,7 +731,7 @@ public class ViewPerson extends javax.swing.JPanel {
         
         savebtnv.setEnabled(true);
         updatebtnv.setEnabled(false);
-        //editing routing no, person no, bank name save button is allowed only in edit mode
+        //editing the values because of save button is allowed only in edit mode
     }
     
     

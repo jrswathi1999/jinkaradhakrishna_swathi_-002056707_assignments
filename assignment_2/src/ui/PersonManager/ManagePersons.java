@@ -224,7 +224,7 @@ public class ManagePersons extends javax.swing.JPanel {
             String accountNumber = txtsearch.getText();
             Person foundPerson = personDirectory.searchPerson(accountNumber);
             
-            if(foundPerson!=null)//if not empty, according to the method in account directory 
+            if(foundPerson!=null)//if not empty, according to the method in person directory 
             {
                 ViewPerson panel= new ViewPerson(userProcessContainer,personDirectory,foundPerson);
                 userProcessContainer.add("ViewPerson",panel);
@@ -271,7 +271,7 @@ public class ManagePersons extends javax.swing.JPanel {
           row[2]= p.getSSN();
           row[3]=p.getAge();
           row[4]=p.getWeight();
-          if (p.getHomeAddress()!=null){
+          if (p.getHomeAddress()!=null){// cheking if return values are null
             row[5]=p.getHomeAddress().getCity().toString();
             row[6]=p.getHomeAddress().getZipCode().toString();
           }

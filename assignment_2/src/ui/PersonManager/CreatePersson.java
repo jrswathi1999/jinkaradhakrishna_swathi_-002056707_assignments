@@ -475,11 +475,24 @@ public class CreatePersson extends javax.swing.JPanel {
         String firstName= txtFirstName.getText();
         String lastName= txtLastName.getText();
         
+        if(firstName.isBlank() || lastName.isBlank())
+        {
+            JOptionPane.showMessageDialog(this,"All fields are mandatory","Error",JOptionPane.ERROR_MESSAGE);
+            //validification for create account , checking if the text fields are empty
+            //stops the process if it's empty
+            return;
+        }
+        
+        
+        // validation for home address and work address
+         
+        
          try{
             SSN= Long.parseLong(txtSSN.getText());
             age = Integer.parseInt(txtAge.getText());
             weight = Double.parseDouble(txtWeight.getText());
         } catch(Exception e){
+            System.out.println(e);
             JOptionPane.showMessageDialog(null, "Please check the SSN , age and weight input. They should me numbers", "Warning", JOptionPane.WARNING_MESSAGE);
             return;//validation for balance input text field 
         }
@@ -501,19 +514,8 @@ public class CreatePersson extends javax.swing.JPanel {
         String wZip = WtxtZip1.getText();
         String wPhone = WtxtPhone1.getText();
 
-        if(firstName.isBlank() || lastName.isBlank())
-        {
-            JOptionPane.showMessageDialog(this,"All fields are mandatory","Error",JOptionPane.ERROR_MESSAGE);
-            //validification for create account , checking if the text fields are empty
-            //stops the process if it's empty
-            return;
-        }
-        
-        
-        // validation for home address and work address
-         
         if(hStreet.isBlank()||hUnit.isBlank()||hCity.isBlank()||hState.isBlank()||hZip.isBlank()||hPhone.isBlank()){
-            JOptionPane.showMessageDialog(this,"All work address feilds are mandatory","Error",JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this,"All home address feilds are mandatory","Error",JOptionPane.ERROR_MESSAGE);
             return;
         }
         
@@ -521,6 +523,7 @@ public class CreatePersson extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(this,"All work address feilds are mandatory","Error",JOptionPane.ERROR_MESSAGE);
             return;
         }
+        
         
         
        
@@ -556,14 +559,15 @@ public class CreatePersson extends javax.swing.JPanel {
         p.getWorkAddress().setZipCode(wPhone);
         p.getWorkAddress().setPhoneNumber(wPhone);
         
-        //setting account details
-        JOptionPane.showMessageDialog(null, "Account Created!", "Success", JOptionPane.INFORMATION_MESSAGE);
+        //Dialog box for creating Person
+        JOptionPane.showMessageDialog(null, "Person Profile Created!", "Success", JOptionPane.INFORMATION_MESSAGE);
         
         //clearing text fields after submitting
         txtFirstName.setText("");
         txtLastName.setText("");
         txtSSN.setText("");
         txtAge.setText("");
+        txtWeight.setText("");
         
         HtxtStreetAdd.setText("");
         HtxtUnitNo.setText("");
