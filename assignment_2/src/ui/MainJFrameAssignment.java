@@ -170,7 +170,9 @@ public class MainJFrameAssignment extends javax.swing.JFrame {
     private void generateDemoData() {// adding demo data which will be present at the start 
 //        Address homeAddress1 = new Address("vinal Street", "apt 2","Boston","MA","02134","9083049809");
 //        Address workAddress1 = new Address("Parker Hill", "apt 2","Boston","MA","02120","98779848465");
-//      
+        
+
+        //adding first person
         Person newPerson1 = personDirectory.addPerson();
         newPerson1.setFirstName("Aman");
         newPerson1.setLastName("Raj");
@@ -179,54 +181,93 @@ public class MainJFrameAssignment extends javax.swing.JFrame {
         newPerson1.setWeight(60.8);
         
         Address homeAdd1= new Address();
-//        newPerson1.getHomeAddress().setStreetAddress("vinal street");
-//        newPerson1.getHomeAddress().setUnitNumber("apt 2");
+        homeAdd1.setStreetAddress("vinal street");
+        homeAdd1.setUnitNumber("apt 2");
         homeAdd1.setCity("Boston");
-//        newPerson1.getHomeAddress().setState("MA");
+        homeAdd1.setState("MA");
         homeAdd1.setZipCode("02130");
-//        newPerson1.getHomeAddress().setPhoneNumber("9083049809");
+        homeAdd1.setPhoneNumber("9083049809");
         newPerson1.setHomeAddress(homeAdd1);
         
-//        newPerson1.getWorkAddress().setStreetAddress("Parker Hill");
-//        newPerson1.getWorkAddress().setUnitNumber("apt 2");
-//        newPerson1.getWorkAddress().setCity("Boston");
-//        newPerson1.getWorkAddress().setState("MA");
-//        newPerson1.getWorkAddress().setZipCode("02121");
-//        newPerson1.getWorkAddress().setPhoneNumber("9065154155");
+
 
         Address workAdd1= new Address();
-//        newPerson1.getHomeAddress().setStreetAddress("vinal street");
-//        newPerson1.getHomeAddress().setUnitNumber("apt 2");
-        workAdd1.setCity("Boston");
-//        newPerson1.getHomeAddress().setState("MA");
-        workAdd1.setZipCode("02130");
-//        newPerson1.getHomeAddress().setPhoneNumber("9083049809");
+        workAdd1.setStreetAddress("vinal street");
+        workAdd1.setUnitNumber("apt 2");
+        workAdd1.setCity("Chicago");
+        workAdd1.setState("MA");
+        workAdd1.setZipCode("026789");
+        workAdd1.setPhoneNumber("9083049809");
         newPerson1.setWorkAddress(workAdd1);
+        
+        
+        
+        //second person
+        Person newPerson2 = personDirectory.addPerson();
+        newPerson2.setFirstName("Monica");
+        newPerson2.setLastName("Geller");
+        newPerson2.setSSN(678892635);
+        newPerson2.setAge(29);
+        newPerson2.setWeight(55);
+        
+        Address homeAdd2= new Address();
+        homeAdd2.setStreetAddress("Central Park ");
+        homeAdd2.setUnitNumber("apt 2");
+        homeAdd2.setCity("NYC");
+        homeAdd2.setState("NY");
+        homeAdd2.setZipCode("029881");
+        homeAdd2.setPhoneNumber("98127987799");
+        newPerson2.setHomeAddress(homeAdd2);
+        
+
+
+        Address workAdd2= new Address();
+        workAdd2.setStreetAddress("Chef's restaurant");
+        workAdd2.setUnitNumber("9");
+        workAdd2.setCity("NYC");
+        workAdd2.setState("NY");
+        workAdd2.setZipCode("098347");
+        workAdd2.setPhoneNumber("6546848554");
+        newPerson2.setWorkAddress(workAdd2);
+        
+        
+        
+        
+        //3rd rest
+        Person newPerson3 = personDirectory.addPerson();
+        newPerson3.setFirstName("Rachel");
+        newPerson3.setLastName("Green");
+        newPerson3.setSSN(561654455);
+        newPerson3.setAge(29);
+        newPerson3.setWeight(59);
+        
+        Address homeAdd3= new Address();
+        homeAdd3.setStreetAddress("Central Park ");
+        homeAdd3.setUnitNumber("apt 2");
+        homeAdd3.setCity("NYC");
+        homeAdd3.setState("NY");
+        homeAdd3.setZipCode("029881");
+        homeAdd3.setPhoneNumber("65468484874");
+        newPerson3.setHomeAddress(homeAdd3);
+        
+
+
+        Address workAdd3= new Address();
+        workAdd3.setStreetAddress("Raulph Laren");
+        workAdd3.setUnitNumber("7");
+        workAdd3.setCity("NYC");
+        workAdd3.setState("NY");
+        workAdd3.setZipCode("465464");
+        workAdd3.setPhoneNumber("984848484848");
+        newPerson3.setWorkAddress(workAdd3);
+        
+        
+        //
 
        
        
         
-//        Person newPerson2 = personDirectory.addPerson();
-//        newPerson2.setFirstName("Deepika");
-//        newPerson2.setLastName("Dwarka");
-//        newPerson2.setSSN(454147864);
-//        newPerson2.setAge(25);
-//        newPerson2.setWeight(70);
 //        
-//        
-//        newPerson2.getHomeAddress().setStreetAddress("longwood");
-//        newPerson2.getHomeAddress().setUnitNumber("apt 4");
-//        newPerson2.getHomeAddress().setCity("Boston");
-//        newPerson2.getHomeAddress().setState("MA");
-//        newPerson2.getHomeAddress().setZipCode("02170");
-//        newPerson2.getHomeAddress().setPhoneNumber("9878997846");
-//        
-//        newPerson2.getWorkAddress().setStreetAddress("Huntington");
-//        newPerson2.getWorkAddress().setUnitNumber("8");
-//        newPerson2.getWorkAddress().setCity("Boston");
-//        newPerson2.getWorkAddress().setState("MA");
-//        newPerson2.getWorkAddress().setZipCode("02129");
-//        newPerson2.getWorkAddress().setPhoneNumber("9065154155");
 
         
         

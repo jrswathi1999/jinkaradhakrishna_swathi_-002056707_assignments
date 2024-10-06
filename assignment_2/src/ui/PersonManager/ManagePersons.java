@@ -96,13 +96,13 @@ public class ManagePersons extends javax.swing.JPanel {
         tblPerson.setForeground(new java.awt.Color(204, 204, 255));
         tblPerson.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null}
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "First Name", "Last Name", "SSN", "Age", "Weight", "Home Address", "Work Address"
+                "First Name", "Last Name", "SSN", "Age", "Weight", "Home City", "Home Zip code", "Work City", "Work Zip Code"
             }
         ));
         jScrollPane1.setViewportView(tblPerson);
@@ -180,7 +180,7 @@ public class ManagePersons extends javax.swing.JPanel {
             int dialogResult = JOptionPane.showConfirmDialog(null, "Are you sure you want to delete the person?", "Warning", dialogButton);
             if(dialogResult == JOptionPane.YES_OPTION)
             {
-                Person selectedAccount=(Person)tblPerson.getValueAt(selectedRow, 0);
+                Person selectedAccount = personDirectory.getPerson().get(selectedRow);
                 personDirectory.deletePerson(selectedAccount);//methhod declared in person directory
                 populateTable();//refresh list
             }
@@ -202,8 +202,11 @@ public class ManagePersons extends javax.swing.JPanel {
         int selectedRow = tblPerson.getSelectedRow();
         //check if user selected any account
         if(selectedRow>= 0){
+           
+
+             Person selectedAccount = personDirectory.getPerson().get(selectedRow);
             
-            Person selectedAccount= (Person) tblPerson.getValueAt(selectedRow,0);//the row which user selected
+//            Person selectedAccount= (Person) tblPerson.getValueAt(selectedRow,0);//the row which user selected
             
             ViewPerson panel= new ViewPerson(userProcessContainer,personDirectory,selectedAccount);
             userProcessContainer.add("ViewPerson",panel);
@@ -261,15 +264,24 @@ public class ManagePersons extends javax.swing.JPanel {
       
       for(Person p : personDirectory.getPerson()){
           
-          Object[] row = new Object[8];
-          row[0] = p;
-          row[1] = p.getFirstName();
-          row[2]= p.getLastName();
-          row[3]= p.getSSN();
-          row[4]=p.getAge();
-          row[5]=p.getWeight();
-          row[6]=p.getHomeAddress().toString();
-          row[7]=p.getWorkAddress().toString();
+          Object[] row = new Object[9];
+//          row[0] = p;
+          row[0] = p.getFirstName();
+          row[1]= p.getLastName();
+          row[2]= p.getSSN();
+          row[3]=p.getAge();
+          row[4]=p.getWeight();
+          if (p.getHomeAddress()!=null){
+            row[5]=p.getHomeAddress().getCity().toString();
+            row[6]=p.getHomeAddress().getZipCode().toString();
+          }
+          if(p.getWorkAddress()!=null){
+            row[7]=p.getWorkAddress().getCity().toString();
+            row[8]=p.getWorkAddress().getZipCode().toString();
+          }
+          
+          
+//          row[8]=p;
           
           model.addRow(row);
       }
