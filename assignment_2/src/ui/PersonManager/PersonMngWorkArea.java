@@ -47,7 +47,7 @@ public class PersonMngWorkArea extends javax.swing.JPanel {
         createaccbtn.setBackground(new java.awt.Color(0, 0, 0));
         createaccbtn.setFont(new java.awt.Font("Stencil", 0, 18)); // NOI18N
         createaccbtn.setForeground(new java.awt.Color(204, 204, 255));
-        createaccbtn.setText("Create Account");
+        createaccbtn.setText("Create person");
         createaccbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 createaccbtnActionPerformed(evt);
@@ -57,7 +57,7 @@ public class PersonMngWorkArea extends javax.swing.JPanel {
         mngaccbtn.setBackground(new java.awt.Color(0, 0, 0));
         mngaccbtn.setFont(new java.awt.Font("Stencil", 0, 18)); // NOI18N
         mngaccbtn.setForeground(new java.awt.Color(204, 204, 255));
-        mngaccbtn.setText("Manage Account");
+        mngaccbtn.setText("Manage person");
         mngaccbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mngaccbtnActionPerformed(evt);
@@ -69,30 +69,21 @@ public class PersonMngWorkArea extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(423, 423, 423)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(322, 322, 322)
-                        .addComponent(createaccbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(330, 330, 330)
-                        .addComponent(mngaccbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(398, Short.MAX_VALUE))
+                    .addComponent(mngaccbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 347, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(createaccbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 339, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(431, Short.MAX_VALUE))
         );
-
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {createaccbtn, mngaccbtn});
-
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(98, 98, 98)
-                .addComponent(createaccbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 145, Short.MAX_VALUE)
+                .addGap(150, 150, 150)
+                .addComponent(createaccbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(176, 176, 176)
                 .addComponent(mngaccbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(142, 142, 142))
+                .addContainerGap(178, Short.MAX_VALUE))
         );
-
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {createaccbtn, mngaccbtn});
-
     }// </editor-fold>//GEN-END:initComponents
 
     private void createaccbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createaccbtnActionPerformed

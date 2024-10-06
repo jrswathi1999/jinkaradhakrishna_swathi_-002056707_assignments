@@ -68,7 +68,7 @@ public class MainJFrameAssignment extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(204, 204, 255));
 
         btnAccountMng.setBackground(new java.awt.Color(0, 0, 0));
-        btnAccountMng.setFont(new java.awt.Font("Stencil", 0, 18)); // NOI18N
+        btnAccountMng.setFont(new java.awt.Font("Stencil", 0, 36)); // NOI18N
         btnAccountMng.setForeground(new java.awt.Color(204, 204, 255));
         btnAccountMng.setText("start here");
         btnAccountMng.addActionListener(new java.awt.event.ActionListener() {
@@ -81,17 +81,17 @@ public class MainJFrameAssignment extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(434, 434, 434)
-                .addComponent(btnAccountMng, javax.swing.GroupLayout.PREFERRED_SIZE, 366, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(438, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(336, Short.MAX_VALUE)
+                .addComponent(btnAccountMng, javax.swing.GroupLayout.PREFERRED_SIZE, 570, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(332, 332, 332))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(252, 252, 252)
-                .addComponent(btnAccountMng, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(395, Short.MAX_VALUE))
+                .addGap(128, 128, 128)
+                .addComponent(btnAccountMng, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(194, Short.MAX_VALUE))
         );
 
         userProcessContainer.add(jPanel1, "card2");
@@ -233,10 +233,10 @@ public class MainJFrameAssignment extends javax.swing.JFrame {
         
         
         
-        //3rd rest
+        //3rd person
         Person newPerson3 = personDirectory.addPerson();
-        newPerson3.setFirstName("Rachel");
-        newPerson3.setLastName("Green");
+        newPerson3.setFirstName("Harvey");
+        newPerson3.setLastName("Spectre");
         newPerson3.setSSN(561654455);
         newPerson3.setAge(29);
         newPerson3.setWeight(59);
@@ -262,12 +262,65 @@ public class MainJFrameAssignment extends javax.swing.JFrame {
         newPerson3.setWorkAddress(workAdd3);
         
         
-        //
+        //4th person
 
-       
+        Person newPerson4 = personDirectory.addPerson();
+        newPerson4.setFirstName("Shri");
+        newPerson4.setLastName("Varhinni");
+        newPerson4.setSSN(987239847);
+        newPerson4.setAge(33);
+        newPerson4.setWeight(70);
+        
+        Address homeAdd4= new Address();
+        homeAdd4.setStreetAddress(" Manhattan");
+        homeAdd4.setUnitNumber("apt 1");
+        homeAdd4.setCity("NYC");
+        homeAdd4.setState("NY");
+        homeAdd4.setZipCode("025154");
+        homeAdd4.setPhoneNumber("5465456454");
+        newPerson4.setHomeAddress(homeAdd4);
+        
+
+        
+        Address workAdd4= new Address();
+        workAdd4.setStreetAddress("Palentientology");
+        workAdd4.setUnitNumber("9");
+        workAdd4.setCity("Los Angles");
+        workAdd4.setState("CaliFornia");
+        workAdd4.setZipCode("454544");
+        workAdd4.setPhoneNumber("87878548894");
+        newPerson4.setWorkAddress(workAdd4);
        
         
-//        
+        
+        
+        //5th Person
+        Person newPerson5 = personDirectory.addPerson();
+        newPerson5.setFirstName("Mike");
+        newPerson5.setLastName("Ross");
+        newPerson5.setSSN(879879877);
+        newPerson5.setAge(35);
+        newPerson5.setWeight(70);
+        
+        Address homeAdd5= new Address();
+        homeAdd5.setStreetAddress(" Manhattan");
+        homeAdd5.setUnitNumber("spt 4");
+        homeAdd5.setCity("Dallas");
+        homeAdd5.setState("Texas");
+        homeAdd5.setZipCode("094998");
+        homeAdd5.setPhoneNumber("282512511");
+        newPerson5.setHomeAddress(homeAdd5);
+        
+        Address workAdd5= new Address();
+        workAdd5.setStreetAddress("Junior Partner");
+        workAdd5.setUnitNumber("8");
+        workAdd5.setCity("Seatle");
+        workAdd5.setState("California");
+        workAdd5.setZipCode("584556");
+        workAdd5.setPhoneNumber("5544455555");
+        newPerson5.setWorkAddress(workAdd5);
+        
+        
 
         
         
