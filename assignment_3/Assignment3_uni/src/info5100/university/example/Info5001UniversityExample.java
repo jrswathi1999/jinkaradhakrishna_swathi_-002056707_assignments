@@ -216,7 +216,7 @@ public class Info5001UniversityExample {
         SeatAssignment sa2DevOps = student2Load.newSeatAssignment(courseofferDevOps, 7.9f);
         student2Load.registerStudent(sa2DevOps); 
 
-        
+        //student 3
         CourseLoad student3Load = student3.newCourseLoad("Fall_2024");
         SeatAssignment sa3AED = student3Load.newSeatAssignment(courseofferAED, 5.5f);
         student3Load.registerStudent(sa3AED);
@@ -232,7 +232,7 @@ public class Info5001UniversityExample {
         student3Load.registerStudent(sa3AI);
 
         
-       
+       //student 4
         CourseLoad student4Load = student4.newCourseLoad("Fall_2024");
         SeatAssignment sa4AED = student4Load.newSeatAssignment(courseofferAED, 7.4f);
         student4Load.registerStudent(sa4AED);
@@ -246,7 +246,9 @@ public class Info5001UniversityExample {
         student4Load.registerStudent(sa4Cloud);
         SeatAssignment sa4DevOps = student4Load.newSeatAssignment(courseofferDevOps, 7.9f);
         student4Load.registerStudent(sa4DevOps);
-
+        
+        
+        //student 6
         CourseLoad student6Load = student6.newCourseLoad("Fall_2024");
         SeatAssignment sa6AED = student6Load.newSeatAssignment(courseofferAED, 7.4f);
         student6Load.registerStudent(sa6AED);
@@ -260,7 +262,9 @@ public class Info5001UniversityExample {
         student6Load.registerStudent(sa6Cloud);
         SeatAssignment sa6DevOps = student6Load.newSeatAssignment(courseofferDevOps, 7.9f);
         student6Load.registerStudent(sa6DevOps);
-
+        
+        
+        //student 8
         CourseLoad student8Load = student8.newCourseLoad("Fall_2024");
         SeatAssignment sa8AED = student8Load.newSeatAssignment(courseofferAED, 7.4f);
         student8Load.registerStudent(sa8AED);
@@ -275,6 +279,7 @@ public class Info5001UniversityExample {
         SeatAssignment sa8DevOps = student8Load.newSeatAssignment(courseofferDevOps, 7.9f);
         student8Load.registerStudent(sa8DevOps);
 
+        //student 10
         CourseLoad student10Load = student10.newCourseLoad("Fall_2024");
         SeatAssignment sa10AED = student10Load.newSeatAssignment(courseofferAED, 7.4f);
         student10Load.registerStudent(sa10AED);
@@ -289,7 +294,7 @@ public class Info5001UniversityExample {
         SeatAssignment sa10DevOps = student10Load.newSeatAssignment(courseofferDevOps, 7.9f);
         student10Load.registerStudent(sa10DevOps);
 
-        
+        //student 5
        CourseLoad student5Load = student5.newCourseLoad("Fall_2024");
         SeatAssignment sa5AED = student5Load.newSeatAssignment(courseofferAED, 8.5f);
         student5Load.registerStudent(sa5AED);
@@ -304,6 +309,7 @@ public class Info5001UniversityExample {
         SeatAssignment sa5DevOps = student5Load.newSeatAssignment(courseofferDevOps, 7.9f);
         student5Load.registerStudent(sa5DevOps);
 
+        //student 7
         CourseLoad student7Load = student7.newCourseLoad("Fall_2024");
         SeatAssignment sa7AED = student7Load.newSeatAssignment(courseofferAED, 8.5f);
         student7Load.registerStudent(sa7AED);
@@ -318,6 +324,7 @@ public class Info5001UniversityExample {
         SeatAssignment sa7ML = student7Load.newSeatAssignment(courseofferMachineLearning, 3.0f);
         student7Load.registerStudent(sa7ML);
 
+        //student 9
         CourseLoad student9Load = student9.newCourseLoad("Fall_2024");
         SeatAssignment sa9AED = student9Load.newSeatAssignment(courseofferAED, 8.5f);
         student9Load.registerStudent(sa9AED);
@@ -336,19 +343,16 @@ public class Info5001UniversityExample {
        
         
         
-//        for(SeatAssignment seatAssignment : student1Load.getSeatAssignments()){
-//             System.out.println("Course: " + seatAssignment.getCourseOffer().toString() +
-//                       ", Grade: " + seatAssignment.getGrade());
-//        }
+
         
         
         
         
 //        
-//        courseload.newSeatAssignment(courseoffer); //register student in class
+         //register student in class
 //        
-        int total = department.calculateRevenuesBySemester("Fall2020");
-        System.out.print("Total: " + total);
+        int total = department.calculateRevenuesBySemester("Fall_2024");
+        System.out.println("Total: " + total);
 
         //finding course by number 
         String courseNumber="info 6500";
