@@ -27,15 +27,18 @@ public class CourseOffer {
         seatlist = new ArrayList();
     }
      
-    public void AssignAsTeacher(FacultyProfile fp) {
-
-        facultyassignment = new FacultyAssignment(fp, this);
-    }
+//    public void AssignAsTeacher(FacultyProfile fp) {
+//
+//        facultyassignment = new FacultyAssignment(fp, this);
+//    }
 
     public FacultyProfile getFacultyProfile() {
         return facultyassignment.getFacultyProfile();
     }
     
+    public void setFacultyAssignment(FacultyAssignment fa) {
+    this.facultyassignment = fa;
+    }
     
 
     public String getCourseNumber() {

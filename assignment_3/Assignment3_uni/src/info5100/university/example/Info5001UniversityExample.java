@@ -36,26 +36,26 @@ public class Info5001UniversityExample {
         
         PersonDirectory pd = department.getPersonDirectory();
         
-        //persons for teacher
-        Person persont1 = pd.newPerson("0111111");
-        Person persont2 = pd.newPerson("0112222");
-        Person persont3 = pd.newPerson("0113333");
-        Person persont4 = pd.newPerson("0114444");
-        Person persont5 = pd.newPerson("0115555");
-        Person persont6 = pd.newPerson("0116666");
-        
-        //persona for student
-        
-        Person personS1 = pd.newPerson("0112311");
-        Person personS2 = pd.newPerson("0114422");
-        Person personS3 = pd.newPerson("0115533");
-        Person personS4 = pd.newPerson("0115544");
-        Person personS5 = pd.newPerson("0112355");
-        Person personS6 = pd.newPerson("0112366");
-        Person personS7 = pd.newPerson("0114477");
-        Person personS8 = pd.newPerson("0115588");
-        Person personS9 = pd.newPerson("0115599");
-        Person personS10 =pd.newPerson("01123100");
+        // Persons for teacher
+        Person persont1 = pd.newPerson("0111111"); persont1.setName("Alice Johnson");
+        Person persont2 = pd.newPerson("0112222"); persont2.setName("Bob Smith");
+        Person persont3 = pd.newPerson("0113333"); persont3.setName("Carol Williams");
+        Person persont4 = pd.newPerson("0114444"); persont4.setName("David Brown");
+        Person persont5 = pd.newPerson("0115555"); persont5.setName("Emma Jones");
+        Person persont6 = pd.newPerson("0116666"); persont6.setName("Frank Taylor");
+
+        // Persons for students
+        Person personS1 = pd.newPerson("0112311"); personS1.setName("George Anderson");
+        Person personS2 = pd.newPerson("0114422"); personS2.setName("Hannah Martinez");
+        Person personS3 = pd.newPerson("0115533"); personS3.setName("Ivy Wilson");
+        Person personS4 = pd.newPerson("0115544"); personS4.setName("Jack Thomas");
+        Person personS5 = pd.newPerson("0112355"); personS5.setName("Katie White");
+        Person personS6 = pd.newPerson("0112366"); personS6.setName("Liam Harris");
+        Person personS7 = pd.newPerson("0114477"); personS7.setName("Mia Lewis");
+        Person personS8 = pd.newPerson("0115588"); personS8.setName("Noah Robinson");
+        Person personS9 = pd.newPerson("0115599"); personS9.setName("Olivia Walker");
+        Person personS10 = pd.newPerson("01123100"); personS10.setName("Peter Hall");
+
         
         FacultyDirectory fd=department.getFacultydirectory();
         
@@ -163,10 +163,10 @@ public class Info5001UniversityExample {
        
         
         
-        for(SeatAssignment seatAssignment : student1Load.getSeatAssignments()){
-             System.out.println("Course: " + seatAssignment.getCourseOffer().toString() +
-                       ", Grade: " + seatAssignment.getGrade());
-        }
+//        for(SeatAssignment seatAssignment : student1Load.getSeatAssignments()){
+//             System.out.println("Course: " + seatAssignment.getCourseOffer().toString() +
+//                       ", Grade: " + seatAssignment.getGrade());
+//        }
         
         
         
@@ -189,6 +189,8 @@ public class Info5001UniversityExample {
         }else {
             System.out.println("Course with number " + courseNumber + " not found.");
         }
+        
+        department.displayStudentRegistrations("Fall_2024", department);
      
        
       

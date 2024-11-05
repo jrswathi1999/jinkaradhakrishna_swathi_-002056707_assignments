@@ -51,7 +51,7 @@ public class FacultyProfile {
         
         FacultyAssignment fa = new FacultyAssignment(this, co);
         facultyassignments.add(fa);
-        
+        co.setFacultyAssignment(fa);
         return fa;
     }
     
