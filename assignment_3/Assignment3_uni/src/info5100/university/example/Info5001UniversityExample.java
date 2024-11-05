@@ -168,17 +168,17 @@ public class Info5001UniversityExample {
         //assigning teachers ot course offer
         teach1.AssignAsTeacher(courseofferAED);
         teach2.AssignAsTeacher(courseofferWebDev);
-        teach3.AssignAsTeacher(courseofferDataSci);
+        teach4.AssignAsTeacher(courseofferDataSci);
         teach4.AssignAsTeacher(courseofferDMDD);
-        teach5.AssignAsTeacher(courseofferEnglish);
+        teach2.AssignAsTeacher(courseofferEnglish);
         teach6.AssignAsTeacher(courseofferArt);
         
         teach1.AssignAsTeacher(courseofferCyberSec);      // Cybersecurity Fundamentals
-        teach2.AssignAsTeacher(courseofferAI);            // Artificial Intelligence
+        teach5.AssignAsTeacher(courseofferAI);            // Artificial Intelligence
         teach3.AssignAsTeacher(courseofferMachineLearning); // Machine Learning
-        teach4.AssignAsTeacher(courseofferCloudComputing); // Cloud Computing
+        teach1.AssignAsTeacher(courseofferCloudComputing); // Cloud Computing
         teach5.AssignAsTeacher(courseofferDevOps);        // DevOps Practices
-        teach6.AssignAsTeacher(courseofferDataVisualization);
+        teach3.AssignAsTeacher(courseofferDataVisualization);
         
         //finds empty seat in courseoffer 
         //creates seat assignment object that links this student courseLoad to available seat
@@ -347,8 +347,8 @@ public class Info5001UniversityExample {
 //        
 //        courseload.newSeatAssignment(courseoffer); //register student in class
 //        
-//        int total = department.calculateRevenuesBySemester("Fall2020");
-//        System.out.print("Total: " + total);
+        int total = department.calculateRevenuesBySemester("Fall2020");
+        System.out.print("Total: " + total);
 
         //finding course by number 
         String courseNumber="info 6500";
