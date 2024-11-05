@@ -22,6 +22,7 @@ public class SeatAssignment {
     public SeatAssignment(CourseLoad cl, Seat s, float grade){
         seat = s;
         courseload = cl;
+        this.grade=grade;
     }
      public float getGrade() {
         return grade;

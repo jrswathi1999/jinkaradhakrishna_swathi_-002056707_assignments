@@ -90,6 +90,13 @@ public class Info5001UniversityExample {
         Course courseEnglish = coursecatalog.newCourse("English", "info 9400", 4);
         Course courseArt = coursecatalog.newCourse("Art", "info 7890", 4);
         
+        Course courseCyberSec = coursecatalog.newCourse("Cybersecurity Fundamentals", "info 7200", 4);
+        Course courseAI = coursecatalog.newCourse("Artificial Intelligence", "info 7400", 4);
+        Course courseMachineLearning = coursecatalog.newCourse("Machine Learning", "info 7500", 4);
+        Course courseCloudComputing = coursecatalog.newCourse("Cloud Computing", "info 7600", 4);
+        Course courseDevOps = coursecatalog.newCourse("DevOps Practices", "info 7700", 4);
+        Course courseDataVisualization = coursecatalog.newCourse("Data Visualization", "info 7800", 4);
+        
         //creating course schedule
         CourseSchedule coursescheduleFall = department.newCourseSchedule("Fall_2024");
 //        CourseSchedule coursescheduleSpring = department.newCourseSchedule("Spring_2024");
@@ -102,6 +109,15 @@ public class Info5001UniversityExample {
         CourseOffer courseofferEnglish = coursescheduleFall.newCourseOffer("info 9400");
         CourseOffer courseofferArt = coursescheduleFall.newCourseOffer("info 7890");
         
+        // Assuming coursescheduleFall is an instance of CourseSchedule where courses are offered
+        CourseOffer courseofferCyberSec = coursescheduleFall.newCourseOffer("info 7200");
+        CourseOffer courseofferAI = coursescheduleFall.newCourseOffer("info 7400");
+        CourseOffer courseofferMachineLearning = coursescheduleFall.newCourseOffer("info 7500");
+        CourseOffer courseofferCloudComputing = coursescheduleFall.newCourseOffer("info 7600");
+        CourseOffer courseofferDevOps = coursescheduleFall.newCourseOffer("info 7700");
+        CourseOffer courseofferDataVisualization = coursescheduleFall.newCourseOffer("info 7800");
+
+        
         // adding the course to core and electives
         Degree degree = new Degree("MSIS");
         
@@ -112,12 +128,26 @@ public class Info5001UniversityExample {
         degree.addElectiveCourse(courseEnglish);
         degree.addElectiveCourse(courseArt);
         
+        degree.addElectiveCourse(courseCyberSec);
+        degree.addElectiveCourse(courseAI);
+        degree.addElectiveCourse(courseMachineLearning);
+        degree.addElectiveCourse(courseCloudComputing);
+        degree.addElectiveCourse(courseDevOps);
+        degree.addElectiveCourse(courseDataVisualization);
+        
         if(courseofferAED==null)return;
         if(courseofferWebDev==null)return;
         if(courseofferDataSci==null)return;
         if(courseofferDMDD==null)return;
         if(courseofferEnglish==null)return;
         if(courseofferArt==null)return;
+        
+        if (courseofferCyberSec == null) return;
+        if (courseofferAI == null) return;
+        if (courseofferMachineLearning == null) return;
+        if (courseofferCloudComputing == null) return;
+        if (courseofferDevOps == null) return;
+        if (courseofferDataVisualization == null) return;
         
         //courseoffer seats 
         courseofferAED.generatSeats(50);
@@ -127,6 +157,13 @@ public class Info5001UniversityExample {
         courseofferEnglish.generatSeats(50);
         courseofferArt.generatSeats(50);
         
+        courseofferCyberSec.generatSeats(50);
+        courseofferAI.generatSeats(50);
+        courseofferMachineLearning.generatSeats(50);
+        courseofferCloudComputing.generatSeats(50);
+        courseofferDevOps.generatSeats(50);
+        courseofferDataVisualization.generatSeats(50);
+
         
         //assigning teachers ot course offer
         teach1.AssignAsTeacher(courseofferAED);
@@ -136,32 +173,165 @@ public class Info5001UniversityExample {
         teach5.AssignAsTeacher(courseofferEnglish);
         teach6.AssignAsTeacher(courseofferArt);
         
+        teach1.AssignAsTeacher(courseofferCyberSec);      // Cybersecurity Fundamentals
+        teach2.AssignAsTeacher(courseofferAI);            // Artificial Intelligence
+        teach3.AssignAsTeacher(courseofferMachineLearning); // Machine Learning
+        teach4.AssignAsTeacher(courseofferCloudComputing); // Cloud Computing
+        teach5.AssignAsTeacher(courseofferDevOps);        // DevOps Practices
+        teach6.AssignAsTeacher(courseofferDataVisualization);
         
-        CourseLoad student1Load = student1.newCourseLoad("Fall_2024");// makes object of courseLoad for student 1 for sem fall_2024
-        SeatAssignment saAED=student1Load.newSeatAssignment(courseofferAED,8.5f);//registers student1 for courseofferAED
         //finds empty seat in courseoffer 
         //creates seat assignment object that links this student courseLoad to available seat
         //adds seat assignment to studen1Load's seatassignment list
-        
-//        student1Load.registerStudent(saAED);//ensures saAED that is seat assignment is formally associated with student course load
-        //links SeatAssignment with courseLoad
-        
+        CourseLoad student1Load = student1.newCourseLoad("Fall_2024");// makes object of courseLoad for student 1 for sem fall_2024
+        SeatAssignment saAED=student1Load.newSeatAssignment(courseofferAED,8.5f);//registers student1 for courseofferAED
+        student1Load.registerStudent(saAED);//ensures saAED that is seat assignment is formally associated with student course load  //links SeatAssignment with courseLoad
         SeatAssignment saWeb=student1Load.newSeatAssignment(courseofferWebDev,9.0f);
-        student1Load.registerStudent(saWeb);
-        
+        student1Load.registerStudent(saWeb);        
         SeatAssignment saData=student1Load.newSeatAssignment(courseofferDataSci,7.8f);
         student1Load.registerStudent(saData);
-        
         SeatAssignment saDMDD=student1Load.newSeatAssignment(courseofferDMDD,8.8f);
-        student1Load.registerStudent(saDMDD);
-        
+        student1Load.registerStudent(saDMDD);        
         SeatAssignment saEng=student1Load.newSeatAssignment(courseofferEnglish,9.2f);
         student1Load.registerStudent(saEng);
+        SeatAssignment sa1Cyb = student1Load.newSeatAssignment(courseofferCyberSec, 5.0f);
+        student1Load.registerStudent(sa1Cyb);
+        
+        //student 2
+        
+       // Create a new course load for student 2 for the Fall 2024 semester
+        CourseLoad student2Load = student2.newCourseLoad("Fall_2024");
+
+    // Register student 2 for the core course AED with a grade of 7.4
+        SeatAssignment sa2AED = student2Load.newSeatAssignment(courseofferAED, 7.4f);
+        student2Load.registerStudent(sa2AED);      
+        SeatAssignment sa2Cyb = student2Load.newSeatAssignment(courseofferCyberSec, 5.0f);
+        student2Load.registerStudent(sa2Cyb); 
+        SeatAssignment sa2AI = student2Load.newSeatAssignment(courseofferAI, 4.7f);
+        student2Load.registerStudent(sa2AI); 
+        SeatAssignment sa2ML = student2Load.newSeatAssignment(courseofferMachineLearning, 3.0f);
+        student2Load.registerStudent(sa2ML);
+        SeatAssignment sa2Cloud = student2Load.newSeatAssignment(courseofferCloudComputing, 9.2f);
+        student2Load.registerStudent(sa2Cloud);
+        SeatAssignment sa2DevOps = student2Load.newSeatAssignment(courseofferDevOps, 7.9f);
+        student2Load.registerStudent(sa2DevOps); 
+
+        
+        CourseLoad student3Load = student3.newCourseLoad("Fall_2024");
+        SeatAssignment sa3AED = student3Load.newSeatAssignment(courseofferAED, 5.5f);
+        student3Load.registerStudent(sa3AED);
+        SeatAssignment sa3Web = student3Load.newSeatAssignment(courseofferWebDev, 4.0f);
+        student3Load.registerStudent(sa3Web);
+        SeatAssignment sa3Data = student3Load.newSeatAssignment(courseofferDataSci, 8.8f);
+        student3Load.registerStudent(sa3Data);
+        SeatAssignment sa3DMDD = student3Load.newSeatAssignment(courseofferDMDD, 6.8f);
+        student3Load.registerStudent(sa3DMDD);
+        SeatAssignment sa3Eng = student3Load.newSeatAssignment(courseofferEnglish, 8.2f);
+        student3Load.registerStudent(sa3Eng);
+        SeatAssignment sa3AI = student3Load.newSeatAssignment(courseofferAI, 4.7f);
+        student3Load.registerStudent(sa3AI);
+
         
        
-        System.out.println(student1.getCourseLoadBySemester("Fall_2024"));
+        CourseLoad student4Load = student4.newCourseLoad("Fall_2024");
+        SeatAssignment sa4AED = student4Load.newSeatAssignment(courseofferAED, 7.4f);
+        student4Load.registerStudent(sa4AED);
+        SeatAssignment sa4Cyb = student4Load.newSeatAssignment(courseofferCyberSec, 5.0f);
+        student4Load.registerStudent(sa4Cyb);
+        SeatAssignment sa4AI = student4Load.newSeatAssignment(courseofferAI, 4.7f);
+        student4Load.registerStudent(sa4AI);
+        SeatAssignment sa4ML = student4Load.newSeatAssignment(courseofferMachineLearning, 3.0f);
+        student4Load.registerStudent(sa4ML);
+        SeatAssignment sa4Cloud = student4Load.newSeatAssignment(courseofferCloudComputing, 9.2f);
+        student4Load.registerStudent(sa4Cloud);
+        SeatAssignment sa4DevOps = student4Load.newSeatAssignment(courseofferDevOps, 7.9f);
+        student4Load.registerStudent(sa4DevOps);
+
+        CourseLoad student6Load = student6.newCourseLoad("Fall_2024");
+        SeatAssignment sa6AED = student6Load.newSeatAssignment(courseofferAED, 7.4f);
+        student6Load.registerStudent(sa6AED);
+        SeatAssignment sa6Cyb = student6Load.newSeatAssignment(courseofferCyberSec, 5.0f);
+        student6Load.registerStudent(sa6Cyb);
+        SeatAssignment sa6AI = student6Load.newSeatAssignment(courseofferAI, 4.7f);
+        student6Load.registerStudent(sa6AI);
+        SeatAssignment sa6ML = student6Load.newSeatAssignment(courseofferMachineLearning, 3.0f);
+        student6Load.registerStudent(sa6ML);
+        SeatAssignment sa6Cloud = student6Load.newSeatAssignment(courseofferCloudComputing, 9.2f);
+        student6Load.registerStudent(sa6Cloud);
+        SeatAssignment sa6DevOps = student6Load.newSeatAssignment(courseofferDevOps, 7.9f);
+        student6Load.registerStudent(sa6DevOps);
+
+        CourseLoad student8Load = student8.newCourseLoad("Fall_2024");
+        SeatAssignment sa8AED = student8Load.newSeatAssignment(courseofferAED, 7.4f);
+        student8Load.registerStudent(sa8AED);
+        SeatAssignment sa8Cyb = student8Load.newSeatAssignment(courseofferCyberSec, 5.0f);
+        student8Load.registerStudent(sa8Cyb);
+        SeatAssignment sa8AI = student8Load.newSeatAssignment(courseofferAI, 4.7f);
+        student8Load.registerStudent(sa8AI);
+        SeatAssignment sa8ML = student8Load.newSeatAssignment(courseofferMachineLearning, 3.0f);
+        student8Load.registerStudent(sa8ML);
+        SeatAssignment sa8Cloud = student8Load.newSeatAssignment(courseofferCloudComputing, 9.2f);
+        student8Load.registerStudent(sa8Cloud);
+        SeatAssignment sa8DevOps = student8Load.newSeatAssignment(courseofferDevOps, 7.9f);
+        student8Load.registerStudent(sa8DevOps);
+
+        CourseLoad student10Load = student10.newCourseLoad("Fall_2024");
+        SeatAssignment sa10AED = student10Load.newSeatAssignment(courseofferAED, 7.4f);
+        student10Load.registerStudent(sa10AED);
+        SeatAssignment sa10Cyb = student10Load.newSeatAssignment(courseofferCyberSec, 5.0f);
+        student10Load.registerStudent(sa10Cyb);
+        SeatAssignment sa10AI = student10Load.newSeatAssignment(courseofferAI, 4.7f);
+        student10Load.registerStudent(sa10AI);
+        SeatAssignment sa10ML = student10Load.newSeatAssignment(courseofferMachineLearning, 3.0f);
+        student10Load.registerStudent(sa10ML);
+        SeatAssignment sa10Cloud = student10Load.newSeatAssignment(courseofferCloudComputing, 9.2f);
+        student10Load.registerStudent(sa10Cloud);
+        SeatAssignment sa10DevOps = student10Load.newSeatAssignment(courseofferDevOps, 7.9f);
+        student10Load.registerStudent(sa10DevOps);
+
         
-       
+       CourseLoad student5Load = student5.newCourseLoad("Fall_2024");
+        SeatAssignment sa5AED = student5Load.newSeatAssignment(courseofferAED, 8.5f);
+        student5Load.registerStudent(sa5AED);
+        SeatAssignment sa5Web = student5Load.newSeatAssignment(courseofferWebDev, 9.0f);
+        student5Load.registerStudent(sa5Web);
+        SeatAssignment sa5Data = student5Load.newSeatAssignment(courseofferDataSci, 7.8f);
+        student5Load.registerStudent(sa5Data);
+        SeatAssignment sa5DMDD = student5Load.newSeatAssignment(courseofferDMDD, 8.8f);
+        student5Load.registerStudent(sa5DMDD);
+        SeatAssignment sa5Eng = student5Load.newSeatAssignment(courseofferEnglish, 9.2f);
+        student5Load.registerStudent(sa5Eng);
+        SeatAssignment sa5DevOps = student5Load.newSeatAssignment(courseofferDevOps, 7.9f);
+        student5Load.registerStudent(sa5DevOps);
+
+        CourseLoad student7Load = student7.newCourseLoad("Fall_2024");
+        SeatAssignment sa7AED = student7Load.newSeatAssignment(courseofferAED, 8.5f);
+        student7Load.registerStudent(sa7AED);
+        SeatAssignment sa7Web = student7Load.newSeatAssignment(courseofferWebDev, 9.0f);
+        student7Load.registerStudent(sa7Web);
+        SeatAssignment sa7Data = student7Load.newSeatAssignment(courseofferDataSci, 7.8f);
+        student7Load.registerStudent(sa7Data);
+        SeatAssignment sa7DMDD = student7Load.newSeatAssignment(courseofferDMDD, 8.8f);
+        student7Load.registerStudent(sa7DMDD);
+        SeatAssignment sa7Eng = student7Load.newSeatAssignment(courseofferEnglish, 9.2f);
+        student7Load.registerStudent(sa7Eng);
+        SeatAssignment sa7ML = student7Load.newSeatAssignment(courseofferMachineLearning, 3.0f);
+        student7Load.registerStudent(sa7ML);
+
+        CourseLoad student9Load = student9.newCourseLoad("Fall_2024");
+        SeatAssignment sa9AED = student9Load.newSeatAssignment(courseofferAED, 8.5f);
+        student9Load.registerStudent(sa9AED);
+        SeatAssignment sa9Web = student9Load.newSeatAssignment(courseofferWebDev, 9.0f);
+        student9Load.registerStudent(sa9Web);
+        SeatAssignment sa9Data = student9Load.newSeatAssignment(courseofferDataSci, 7.8f);
+        student9Load.registerStudent(sa9Data);
+        SeatAssignment sa9DMDD = student9Load.newSeatAssignment(courseofferDMDD, 8.8f);
+        student9Load.registerStudent(sa9DMDD);
+        SeatAssignment sa9Eng = student9Load.newSeatAssignment(courseofferEnglish, 9.2f);
+        student9Load.registerStudent(sa9Eng);
+        SeatAssignment sa9Cyb = student9Load.newSeatAssignment(courseofferCyberSec, 5.0f);
+        student9Load.registerStudent(sa9Cyb);
+
         
        
         
