@@ -25,7 +25,8 @@ public class CourseLoad {
         if (seat==null) return null;
         
         SeatAssignment sa = seat.newSeatAssignment(this,grade);
-        seatassignments.add(sa);  //add to students course 
+        
+//        seatassignments.add(sa);  //add to students course 
         return sa;
     }
     

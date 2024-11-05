@@ -148,10 +148,13 @@ public class Info5001UniversityExample {
         
         SeatAssignment saWeb=student1Load.newSeatAssignment(courseofferWebDev,9.0f);
         student1Load.registerStudent(saWeb);
+        
         SeatAssignment saData=student1Load.newSeatAssignment(courseofferDataSci,7.8f);
         student1Load.registerStudent(saData);
+        
         SeatAssignment saDMDD=student1Load.newSeatAssignment(courseofferDMDD,8.8f);
         student1Load.registerStudent(saDMDD);
+        
         SeatAssignment saEng=student1Load.newSeatAssignment(courseofferEnglish,9.2f);
         student1Load.registerStudent(saEng);
         
