@@ -147,42 +147,54 @@ public class Department {
 
     // Iterate over all students in the department
     for (StudentProfile student : studentDirectory.getStudentList()) {
-        CourseLoad courseLoad = student.getCourseLoadBySemester(semester);
+        System.out.println("Student ID: " + student.getPerson().getPersonId());
+        System.out.println("Name: " + student.getPerson().getName());
 
-        if (courseLoad != null) {
-            System.out.println("Student ID: " + student.getPerson().getPersonId());
-            System.out.println("Name: " + student.getPerson().getName());
+        CourseLoad courseLoad = student.getCourseLoadBySemester(semester);
+        
+
+        if (courseLoad == null|| courseLoad.getSeatAssignments().isEmpty()) {
+            System.out.println("No courses registered for "+ semester );
+            continue;}
+            
 
             double totalCredits = 0.0;
             double totalGradePoints = 0.0;
-
+            double totalTuitionFees = 0;
+            
+            System.out.println("Courses Registered:");
+            System.out.println("---------------------------------------------------");
             // Iterate through each seat assignment in the student's course load
             for (SeatAssignment seatAssignment : courseLoad.getSeatAssignments()) {
-                CourseOffer courseOffer = seatAssignment.getCourseOffer();
+                CourseOffer courseOffer = seatAssignment.getSeat().getCourseOffer();
+                String courseName= courseOffer.getCourseName();
+                int credits= courseOffer.getCreditHours();
+                double price= courseOffer.getSubjectCourse().getCoursePrice();
+                double grade= seatAssignment.GetCourseStudentScore();
+                
+                totalCredits += credits;
+                totalGradePoints += grade * credits;
+                totalTuitionFees += price;
+                
+                
+                
                 FacultyProfile faculty = courseOffer.getFacultyProfile(); // Assigned teacher
+                String professorName = (faculty != null) ? faculty.getPerson().getName() : "TBA";
 
-                System.out.println(" - Course: " + courseOffer.getSubjectCourse().getName());
-                System.out.println("   Course Number: " + courseOffer.getSubjectCourse().getCOurseNumber());
-                System.out.println("   Credits: " + courseOffer.getSubjectCourse().getCredits());
-                System.out.println("   Assigned Teacher: " + (faculty != null ? faculty.getPerson().getName() : "Not assigned"));
-                System.out.println("   Grade: " + seatAssignment.getGrade());
-
-                // Calculating total credits and grade points for GPA calculation
-                double courseCredits = courseOffer.getSubjectCourse().getCredits();
-                totalCredits += courseCredits;
-                totalGradePoints += seatAssignment.getGrade() * courseCredits;
+                System.out.printf("Course: %s, Credits: %d, Tuition Fee: %.2f\n", courseName, credits, price);
+                System.out.printf("Professor: %s, Grade: %.2f\n", professorName, grade);
+                System.out.println();
+                
+                
             }
 
             // Calculate GPA for the semester
-            double gpa = totalCredits == 0 ? 0 : totalGradePoints / totalCredits;
-            System.out.printf("CGPA for %s: %.2f%n", semester, gpa);
-
-            // Tuition calculation (assuming $1000 per credit)
-            double tuitionFees = totalCredits * 1000;
-            System.out.printf("Total Tuition Fees: $%.2f%n", tuitionFees);
-            System.out.println("---------------------------------------------------");
+            double gpa = (totalCredits > 0) ? totalGradePoints / totalCredits : 0;
+            System.out.printf("Average GPA for %s: %.2f\n", semester, gpa);
+            System.out.printf("Total Tuition Fees Paid: %.2f\n", totalTuitionFees);
+            System.out.println("===================================================\n");
         }
     }
 }
 
-}
+
