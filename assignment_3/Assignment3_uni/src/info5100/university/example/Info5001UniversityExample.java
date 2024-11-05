@@ -36,7 +36,7 @@ public class Info5001UniversityExample {
         
         PersonDirectory pd = department.getPersonDirectory();
         
-        // Persons for teacher
+        // Persons for teacher and their names
         Person persont1 = pd.newPerson("0111111"); persont1.setName("Alice Johnson");
         Person persont2 = pd.newPerson("0112222"); persont2.setName("Bob Smith");
         Person persont3 = pd.newPerson("0113333"); persont3.setName("Carol Williams");
@@ -44,7 +44,7 @@ public class Info5001UniversityExample {
         Person persont5 = pd.newPerson("0115555"); persont5.setName("Emma Jones");
         Person persont6 = pd.newPerson("0116666"); persont6.setName("Frank Taylor");
 
-        // Persons for students
+        // Persons for students, and their names
         Person personS1 = pd.newPerson("0112311"); personS1.setName("George Anderson");
         Person personS2 = pd.newPerson("0114422"); personS2.setName("Hannah Martinez");
         Person personS3 = pd.newPerson("0115533"); personS3.setName("Ivy Wilson");
@@ -56,7 +56,7 @@ public class Info5001UniversityExample {
         Person personS9 = pd.newPerson("0115599"); personS9.setName("Olivia Walker");
         Person personS10 = pd.newPerson("01123100"); personS10.setName("Peter Hall");
 
-        
+        //making faculty profile for teacher person object
         FacultyDirectory fd=department.getFacultydirectory();
         
         FacultyProfile teach1= fd.newFacultyProfile(persont1);
@@ -121,7 +121,7 @@ public class Info5001UniversityExample {
         // adding the course to core and electives
         Degree degree = new Degree("MSIS");
         
-        degree.addCoreCourse(courseAED);
+        degree.addCoreCourse(courseAED);// only one core
         degree.addElectiveCourse(courseWebDev);
         degree.addElectiveCourse(courseDataSci);
         degree.addElectiveCourse(courseDMDD);
@@ -135,6 +135,7 @@ public class Info5001UniversityExample {
         degree.addElectiveCourse(courseDevOps);
         degree.addElectiveCourse(courseDataVisualization);
         
+        //checking if the course is null or not
         if(courseofferAED==null)return;
         if(courseofferWebDev==null)return;
         if(courseofferDataSci==null)return;
@@ -149,14 +150,13 @@ public class Info5001UniversityExample {
         if (courseofferDevOps == null) return;
         if (courseofferDataVisualization == null) return;
         
-        //courseoffer seats 
+        //generating course offer seats
         courseofferAED.generatSeats(50);
         courseofferWebDev.generatSeats(50);
         courseofferDataSci.generatSeats(50);
         courseofferDMDD.generatSeats(50);
         courseofferEnglish.generatSeats(50);
         courseofferArt.generatSeats(50);
-        
         courseofferCyberSec.generatSeats(50);
         courseofferAI.generatSeats(50);
         courseofferMachineLearning.generatSeats(50);
@@ -171,8 +171,7 @@ public class Info5001UniversityExample {
         teach4.AssignAsTeacher(courseofferDataSci);
         teach4.AssignAsTeacher(courseofferDMDD);
         teach2.AssignAsTeacher(courseofferEnglish);
-        teach6.AssignAsTeacher(courseofferArt);
-        
+        teach6.AssignAsTeacher(courseofferArt);        
         teach1.AssignAsTeacher(courseofferCyberSec);      // Cybersecurity Fundamentals
         teach5.AssignAsTeacher(courseofferAI);            // Artificial Intelligence
         teach3.AssignAsTeacher(courseofferMachineLearning); // Machine Learning
